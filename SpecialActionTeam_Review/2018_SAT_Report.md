@@ -1,35 +1,13 @@
-Ross A. Beyer
-
-Sagan Center at the SETI Institute and NASA Ames Research Center\
+## Authors
+* Ross A. Beyer, Sagan Center at the SETI Institute and NASA Ames Research Center\
 <rbeyer@seti.org>
-
-K. Michael Aye
-
-University of Colorado, Boulder
-
-Nicholas M. Estes
-
-Arizona State University
-
-Carolyn Ernst
-
-Johns Hopkins University Applied Physics Lab
-
-Caleb Fassett
-
-NASA Marshal Space Flight Center
-
-Audrie Fennema
-
-The University of Arizona
-
-Dathon Golish
-
-The University of Arizona
-
-Cynthia Phillips
-
-California Institute of Technology and the Jet Propulsion Laboratory
+* K. Michael Aye, University of Colorado, Boulder
+* Nicholas M. Estes, Arizona State University
+* Carolyn Ernst, Johns Hopkins University Applied Physics Lab
+* Caleb Fassett, NASA Marshal Space Flight Center
+* Audrie Fennema, The University of Arizona
+* Dathon Golish, The University of Arizona
+* Cynthia Phillips, California Institute of Technology and the Jet Propulsion Laboratory
 
 November 30, 2018
 
