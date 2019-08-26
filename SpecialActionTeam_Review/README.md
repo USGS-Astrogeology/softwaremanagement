@@ -1,10 +1,3 @@
-# **DRAFT**
-# USGS Astrogeology Science Center Response to “MAPSIT Special Action Team Report on Cartography and Image Processing Software at the Astrogeology Science Center"
-about
-
-## Links to Past Findings and Responses
-
-## Final Status
 This is a 'quick-view' table that provides an overview of the work that has been undertaken in response to the most recent (2018) SAT review findings.
 
 | Finding | Description                                             | Actions Taken | Status |
