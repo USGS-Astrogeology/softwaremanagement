@@ -611,7 +611,7 @@ overall technical responsibility for strategic direction of cartography
 and spatial data infrastructure software development. One year is a
 reasonable timeframe to accomplish this.
 
-### F23 Workload=
+### F23 Workload
 
 We find that the has followed the 2014 Finding on Workload by both
 hiring new developers and successfully outsourcing work to external
