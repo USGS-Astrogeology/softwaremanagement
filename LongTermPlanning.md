@@ -235,7 +235,7 @@ instruments.
 
 -   Community Sensor Model Bundle Adjustment (Lead: J. Maple)
 
--   Contract NASA AMES to implement these same camera models in AMES
+-   Contract NASA Ames to implement these same camera models in Ames
     Stereo Pipeline both to test this standard outside of Astrogeology
     and to help promote this standard across the community (Lead: T.
     Hare).
