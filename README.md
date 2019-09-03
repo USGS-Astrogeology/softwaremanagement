@@ -5,7 +5,7 @@ This repository stores ASC software management artifacts and review documents ge
 ## Links
 - [Code of Conduct](): TODO - The ASC Code of Conduct for all ASC Organization projects
 - [Long Term Plan](https://github.com/USGS-Astrogeology/softwaremanagement/blob/master/LongTermPlanning.md): The living, five year planning document that is used internally to help drive the direction of ASC software development.
-- Fiscal Year Documentation: Containing short term software development plans for s given fiscal year.
+- Fiscal Year Documentation: Containing short term software development plans for a given fiscal year.
   - [FY19](https://github.com/USGS-Astrogeology/softwaremanagement/tree/master/FY19) 
   - [FY20](https://github.com/USGS-Astrogeology/softwaremanagement/blob/master/FY20/README.md)
 - External Reviews: NASA funded and directed external reviews of ASC Software
