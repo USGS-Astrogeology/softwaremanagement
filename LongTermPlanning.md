@@ -57,10 +57,6 @@ of the ASC software portfolio, including findings 4, 5, 9, 11, 13, and
 
 ## Objective 2: Improve the performance of the code base and the user experience.
 
-*Note: This is a new objective. If there is agreement that this objective should be called out
-specifically, Robin will write up a summary that is consistent with
-others in this document.*
-
 #### Ongoing Efforts:
 
 -   Continue to improve the ISIS build system, through regular support
