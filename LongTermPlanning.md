@@ -1,6 +1,6 @@
 # Long-term Plan for USGS Astrogeology Science Center Software Development
 
-*Last updated: August 25, 2019*
+*Last updated: September 10, 2020*
 
 ## Objective 1: Initiate and foster an open source community, initially centered around software developed by the ASC (including ISIS).
 
@@ -42,20 +42,27 @@ of the ASC software portfolio, including findings 4, 5, 9, 11, 13, and
 #### Activities in FY 20:
 
 -   Open Source Community Development (Lead: J. Laura)
-
 -   ASC Software Portfolio Releasees (Lead: S. Stapleton)
-
 -   Indirectly addressed by ISIS Testing Modularization (Lead: J. Maple)
+
+#### Acitvities in FY 21:
+
+- Open Source Community Development
+- ISIS Application Modularization
+- ISIS PVL and BLOB Extraction
 
 #### Longer-term (5-year horizon):
 
 -   Evaluate the effectiveness of our efforts and make reasonable
     changes to our approach based on community feedback and lessons
     learned.
+- Support a planetary software stack composed of ASC and non-ASC software packages
+- Build and support the external development of community desired analytical tools that make use of our lower level, gold standard, libraries.
 
 ---
 
 ## Objective 2: Improve the performance of the code base and the user experience.
+The ASC will build, support, and integrate with the infrastructure necessary for users to install our software with a minimum amount of effort. The ASC will also release software at a cadence selected to support the largest possible subset of the community. Additionally, ASC will seek to improve the user experience by, when possible, reducing the total volume of data necessary to store locally and improving the overall performance (speed) of the code base.
 
 #### Ongoing Efforts:
 
@@ -87,16 +94,22 @@ of the ASC software portfolio, including findings 4, 5, 9, 11, 13, and
 #### Activities in FY 20:
 
 -   ASC Software Support (Leads: J. Laura, S.Sides)
-
 -   Improvement of ISIS third party dependency management (Lead: K.
     Rodriguez)
-
 -   ISIS Testing Modularization (Lead: J. Maple)
+
+#### Activities in FY21:
+- Remote SPICE Calibration 
+- ISIS3 to ISISX cleanup
+- ISIS Application Modularization
+- ISIS PVL and BLOB Extraction
 
 #### Longer-term (5-year horizon):
 
 -   Evaluate the effectiveness of our efforts and continue to be
     response to community feedback and lessons learned.
+- Fully transition to supporting remote SPICE server capibility reducing the total data volume significantly.
+- Explore the potential for remote data processing in line with the general shift to cloud based data storage and processing in collaboration with our user base.
 
 ---
 
@@ -115,29 +128,27 @@ possible.
 #### Activities in FY 20:
 
 -   ISIS Testing Modularization (K. Rodriguez)
-
 -   Community Sensor Model Bundle Adjustment (Lead: J. Maple)
-
 -   Complete ALE Integration (Leads: J. Laura, J. Maple, K. Berry)
-
 -   Develop and release a Request for Comment (RFC) regarding the ISIS
     Software Modularization plan
-
     -   Appropriately incorporate community feedback into this plan
-
     -   Maintain the publicly available ISIS Software Modularization
         plan by updating the document at least annually (addresses SAT
         finding 8).
+
+#### Activites in FY 21:
+
+- ISIS Application Modularization
+- ISIS PVL and BLOB Extraction
 
 #### Longer-term (5-year horizon):
 
 -   Transition the suite of ISIS control network programs into a
     stand-alone application.
-
 -   Evaluate the benefits of developing a Python API for ISIS by openly
     discussing and planning this API with the OS community (addresses
     SAT finding 21).
-
 -   Astro will deprecate old software by (when applicable) processing
     data using that software, releasing these minimally derived products
     to the community in a usable format, and archiving the software
@@ -191,16 +202,25 @@ should continue to fill.
 #### Activities in FY 20:
 
 -   Community Sensor Model (Lead: T. Hare)
-
 -   Complete ALE Integration (Leads: J. Laura, J. Maple, K. Berry)
-
 -   Lidar Support (B. Archinal)
+
+#### Activities in FY 21:
+- Community Sensor Model
+- PDS4 Support
+- ISIS Mission Support
+- Community Support (Participation in both the PlanetarySoftware and ISIS Technical Committee Organizations)
+- Remote SPICE
 
 #### Longer-term (5-year horizon):
 
--   PDS4 support may be needed in the near future (in-progress for
+-   ~~PDS4 support may be needed in the near future (in-progress for
     CASSIS and Hayabusa 1), and a means to more easily generate PDS4
-    metadata and support files will be required.
+    metadata and support files will be required.~~ (Executing in FY21.)
+- Work as members of the ISIS TC to determine mission needs with respect to software development and release practices.
+- Work as members of mission teams to develop rigurously tested sensor models that support many foundational aspects of mission success.
+- Work as members of the support community to address mission issues as they are reported to our software projects.
+- Continue to modularize our software with the goals of (1) improving our testing confidence and the confidence of mission teams in the efficacy of their pipelines and (2) making the process of pipeline development using components of our software portfolio more straight forward.
 
 ---
 
@@ -228,21 +248,25 @@ instruments.
 #### Activities in FY 20:
 
 -   Community Sensor Model (Lead: T. Hare)
-
 -   Community Sensor Model Bundle Adjustment (Lead: J. Maple)
-
 -   Contract NASA Ames to implement these same camera models in Ames
     Stereo Pipeline both to test this standard outside of Astrogeology
     and to help promote this standard across the community (Lead: T.
     Hare).
 
+#### Activities in FY 21:
+- Community Sensor Model
+- Contract NASA Ames to implement these same camera models in Ames
+    Stereo Pipeline both to test this standard outside of Astrogeology
+    and to help promote this standard across the community.
+
 #### Longer-term (5-year horizon):
 
--   Determine criteria for transitioning current ISIS sensor models into
-    the CSM.
-
+-   ~~Determine criteria for transitioning current ISIS sensor models into
+    the CSM.~~ (Executing in FY21)
 -   Determine a means to continue supporting historical data sets that
     rely on ISIS sensor models.
+- Determine whether dual sensor model development is a valuable method to support additional rigurous testing.
 
 ---
 
@@ -260,23 +284,24 @@ capabilities.
 
 -   Improve our capability to identify and monitor the health of a
     photogrammetric control network.
-
 -   Develop new and improve existing automated matching capabilities for
     image datasets (addresses SAT finding 19).
-
 -   Develop methods to automate tying to ground
 
 #### Activities in FY20:
 
 -   Quantitative metrics for control network (Lead: J. Maple)
-
 -   CTX Controlled Mosaic Generation (Lead: J. Laura)
+
+
+#### Activities in FY21:
+-   Operationalize FY 20 Quantitative metrics for control network
+-   Continue CTX Controlled Mosaic Generation
 
 #### Longer-term (5-year horizon):
 
 -   Develop improved capabilities to handle large data and network
     volumes.
-
 -   Include robust error propagation in bundle adjustment and improved
     documentation describing the bundle adjustment output.
 
@@ -305,6 +330,9 @@ missions and collaborators.
     teams, with the goal of avoiding duplication of efforts and
     encouraging a unified approach to software in support of small
     bodies with a focus on interoperability.
+
+#### Activities in FY 21:
+- Collaboration between ASC staff and the Small Body Mapping Tool development team
 
 #### Longer-term (5-year horizon):
 
