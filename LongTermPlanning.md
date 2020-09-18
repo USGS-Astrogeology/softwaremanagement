@@ -2,6 +2,8 @@
 
 *Last updated: September 10, 2020*
 
+For additional information about the projects listed under each objective, please see the associated directory for the given fiscal year. For example, if you are interested in the *ISIS PVL and BLOB Extraction* project listed under objective 1, please see the FY21 directory README.
+
 ## Objective 1: Initiate and foster an open source community, initially centered around software developed by the ASC (including ISIS).
 
 The ASC software portfolio, including the source code, has always been
@@ -21,7 +23,7 @@ of the ASC software portfolio, including findings 4, 5, 9, 11, 13, and
 #### Ongoing Efforts:
 
 -   Continue to be the steward of ISIS, continue to facilitate and work
-    towards broad participation by external contributors (addresses SAT
+    towards broad participation by contributors (addresses SAT
     finding 4).
 
 -   Maintain mechanisms for widespread use for user engagement with the
@@ -41,9 +43,9 @@ of the ASC software portfolio, including findings 4, 5, 9, 11, 13, and
 
 #### Activities in FY 20:
 
--   Open Source Community Development (Lead: J. Laura)
--   ASC Software Portfolio Releasees (Lead: S. Stapleton)
--   Indirectly addressed by ISIS Testing Modularization (Lead: J. Maple)
+-   Open Source Community Development 
+-   ASC Software Portfolio Releasees 
+-   Indirectly addressed by ISIS Testing Modularization 
 
 #### Acitvities in FY 21:
 
@@ -93,10 +95,9 @@ The ASC will build, support, and integrate with the infrastructure necessary for
 
 #### Activities in FY 20:
 
--   ASC Software Support (Leads: J. Laura, S.Sides)
--   Improvement of ISIS third party dependency management (Lead: K.
-    Rodriguez)
--   ISIS Testing Modularization (Lead: J. Maple)
+-   ASC Software Support 
+-   Improvement of ISIS third party dependency management 
+-   ISIS Testing Modularization 
 
 #### Activities in FY21:
 - Remote SPICE Calibration 
@@ -128,9 +129,9 @@ possible.
 
 #### Activities in FY 20:
 
--   ISIS Testing Modularization (K. Rodriguez)
--   Community Sensor Model Bundle Adjustment (Lead: J. Maple)
--   Complete ALE Integration (Leads: J. Laura, J. Maple, K. Berry)
+-   ISIS Testing Modularization 
+-   Community Sensor Model Bundle Adjustment 
+-   Complete ALE Integration 
 -   Develop and release a Request for Comment (RFC) regarding the ISIS
     Software Modularization plan
     -   Appropriately incorporate community feedback into this plan
@@ -202,9 +203,9 @@ should continue to fill.
 
 #### Activities in FY 20:
 
--   Community Sensor Model (Lead: T. Hare)
--   Complete ALE Integration (Leads: J. Laura, J. Maple, K. Berry)
--   Lidar Support (B. Archinal)
+-   Community Sensor Model 
+-   Complete ALE Integration 
+-   Lidar Support 
 
 #### Activities in FY 21:
 - Community Sensor Model
@@ -219,8 +220,8 @@ should continue to fill.
     CASSIS and Hayabusa 1), and a means to more easily generate PDS4
     metadata and support files will be required.~~ (Executing in FY21.)
 - Work as members of the ISIS TC to determine mission needs with respect to software development and release practices.
-- Work as members of mission teams to develop rigurously tested sensor models that support many foundational aspects of mission success.
-- Work as members of the support community to address mission issues as they are reported to our software projects.
+- Work as members of mission teams for intial implementation of rigurously tested sensor models, ingestion programs, and where appropriate processing pipelines that support many foundational aspects of mission success.
+- Work as members of the support community to address issues as they are reported to our software projects.
 - Continue to modularize our software with the goals of (1) improving our testing confidence and the confidence of mission teams in the efficacy of their pipelines and (2) making the process of pipeline development using components of our software portfolio more straight forward.
 
 ---
@@ -248,12 +249,11 @@ instruments.
 
 #### Activities in FY 20:
 
--   Community Sensor Model (Lead: T. Hare)
--   Community Sensor Model Bundle Adjustment (Lead: J. Maple)
+-   Community Sensor Model 
+-   Community Sensor Model Bundle Adjustment 
 -   Contract NASA Ames to implement these same camera models in Ames
     Stereo Pipeline both to test this standard outside of Astrogeology
-    and to help promote this standard across the community (Lead: T.
-    Hare).
+    and to help promote this standard across the community
 
 #### Activities in FY 21:
 - Community Sensor Model
@@ -291,8 +291,8 @@ capabilities.
 
 #### Activities in FY20:
 
--   Quantitative metrics for control network (Lead: J. Maple)
--   CTX Controlled Mosaic Generation (Lead: J. Laura)
+-   Quantitative metrics for control network 
+-   CTX Controlled Mosaic Generation 
 
 
 #### Activities in FY21:
@@ -323,7 +323,7 @@ missions and collaborators.
 
 #### Activities in FY 20:
 
--   Occlusion: Robust Orthorectification in ISIS (Lead: A. Paquette)
+-   Occlusion: Robust Orthorectification in ISIS 
 
     -   Research and prototype efforts
 
