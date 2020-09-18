@@ -1,6 +1,6 @@
 # Roadmap 2021
 
-Herein, we present the ASC fiscal year 2021 software roadmap. The themes and associated tasks are ASC funded work to be completed during FY21. The enumerated tasks are those that ASC is committing to execute, but are not a complete listing of the work that could be undertaken. As an open source project, we are actively soliciting contributions from the community.
+Herein, we present the ASC fiscal year 2021 (October 1, 2020 - September 30, 2021) software roadmap. The themes and associated tasks are ASC funded work to be completed during FY21. The enumerated tasks are those that ASC is committing to execute, but are not a complete listing of the work that could be undertaken. As an open source project, we are actively soliciting contributions from the community.
 
 We have labeled some tasks as investigations to identify those places where we need additional information before we can estimate the full complexity and scope of a task. These tasks can lead to future work, a decision to defer, or a decision that additional information is required. 
 
@@ -27,7 +27,7 @@ Funded development for ASC software has been categorized into three very broad t
 - Improve bundle adjustment capabilities and control processes
 
 ### ISIS Modularization :running:
-  - Extraction of PVL and BLOB cabilities from ISIS into standalone libraries
+  - Extraction of PVL (label parsing within ISIS and general Parameter Value Language parser for other applications) and BLOB (traditionally ephemeris data stored on ISIS cube files) capabilities from ISIS into standalone libraries
   - SPICE modularization to extract ISIS kernel selection into a stand alone library with a C++ interface 
   - Interface for reading/writing kernels
      
@@ -52,7 +52,7 @@ Funded development for ASC software has been categorized into three very broad t
     
     :running: Maintain communication channels established during FY20 
     
-    :running: Improve docuemntation for external contributions
+    :running: Improve documentation for external contributions
     
     :running: One week per quarter of mission specific support (Git submitted issues and public prioritization meetings)
     :running: One week per quarter of ASC product development support (Git submitted issues and public prioritization meetings)
@@ -60,7 +60,7 @@ Funded development for ASC software has been categorized into three very broad t
   - ISIS3 to ISISX conversion cleanup to remove all ISIS3 references
 
 ### SPICE Calibration 
-  - Update calibration routines to support remote SPICE kernels.
+  - Update calibration routines to support remote SPICE kernels
   
     :muscle: Determine additional applications needing changes with the long-term goal of supporting 100% remote SPICE
 
@@ -73,14 +73,14 @@ Funded development for ASC software has been categorized into three very broad t
   - Improve AutoCNet documentation to support use for analysis of control networks
   - Operationalize FY20 efforts for network analysis including identification of regions of low control density and use of analysis methods (e.g., data snooping)
     
-    :muscle: Implement data snooping method inside of the bundle adjustment code.
+    :muscle: Implement data snooping method inside of the bundle adjustment code
 
 ### PDS4 Support
-  - Develop a PDS4 support solution to add to the ASC software portfolio.
+  - Develop a PDS4 support solution to add to the ASC software portfolio
 
 ### Additional Efforts by non-ASC developers
   - Integrate the Community Sensor Model (CSM) into the Ames Stereo Pipeline (ASP)
-  - Develop as easy as installtion process as possible to have ASP and ISIS installed in the same conda environment.
+  - Develop as easy as installtion process as possible to have ASP and ISIS installed in the same conda environment
   - Open Source a HiRISE de-jitter pipeline
 
 ### Change Detection
@@ -88,4 +88,4 @@ Funded development for ASC software has been categorized into three very broad t
   - Implement 1+ additional change detection algorithms
 
 ## Summary
-In FY21 we are continuing to transition our software to a standard open source model. In FY20 we have benefited from contributions from users outside the ASC staff. We are exceptionally appreciative of these efforts and continue to seek to build a vibrant community of planetary software developers and users. This focus means we are improving the portability of our tests so that external contributors can more easily participate in a standard development cycle, improving documentation for how contributors can help improve documentation and tutorials, modularizing the software into libraries to improve the developer experience and allow use by external developers in their applications, and supporting the existing user community. Additionally, we are reaching out to other planetary software package maintainers with the goal of building a planetary software stack (similar in concept to the ecosystem that exists around the [python scientific computing stack](https://barbagroup.github.io/essential_skills_RRC/jupyter/1/)). We are also focusing on our core competencies, standards support and generation of the highest quality planetary data products. This includes continued development of CSM sensors, tools for assessing control network quality, and the development of support for the PDS4 format. Finally, we continue to research methods and develop tools for hard science questions such as those associated with change detection.
+In FY21 we are continuing to transition our software to a standard open source model. In FY20 we have benefited from contributions from users outside the ASC staff. We are exceptionally appreciative of these efforts and continue to seek to build a vibrant community of planetary software developers and users. This focus means we are: (1) improving the portability of our tests so that external contributors can more easily participate in a standard development cycle and so that our users benefit from improved stability; (2) improving documentation for how contributors can update documentation and tutorials thereby supporting all users of our software offerings; (3) modularizing the software into libraries to improve the developer experience and allow use by external developers in their applications; and (4) supporting the existing user community with timely releases with community driven bug fixes and software enhancements. Additionally, we are reaching out to other planetary software package maintainers with the goal of building a planetary software stack (similar in concept to the ecosystem that exists around the [python scientific computing stack](https://barbagroup.github.io/essential_skills_RRC/jupyter/1/)). This effort supports the user community by seeking to unify the software delivery and installation tools that can frequently be a hurdle for new users. We are also focusing on our core competencies, standards support and generation of the highest quality planetary data products. This includes continued development of CSM sensors, tools for assessing control network quality, and the development of support for the PDS4 format. Finally, we continue to research methods and develop tools for hard science questions such as those associated with change detection.

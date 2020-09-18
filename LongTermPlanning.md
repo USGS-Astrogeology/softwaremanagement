@@ -103,6 +103,7 @@ The ASC will build, support, and integrate with the infrastructure necessary for
 - ISIS3 to ISISX cleanup
 - ISIS Application Modularization
 - ISIS PVL and BLOB Extraction
+- 
 
 #### Longer-term (5-year horizon):
 
@@ -242,7 +243,7 @@ standard in order to support interoperability across a range of software
 tools including SOCET GXP, ENVI, ISIS, and within a stand-alone Python
 testing environment. For the CSM standard, there are much longer-term
 goals to see this standard used across the community, as it is used by
-the military, to standardize camera models for future proposed
+the military, to standardize sensor models for future proposed
 instruments.
 
 #### Activities in FY 20:
