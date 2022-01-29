@@ -51,12 +51,10 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 
 ### Sensor Models & Photogrammetric Control
 ##### In the next five years, the ASC software portfolio must:
-1. have fully adopted ALE, SpiceQL, and the updated ISIS ingestion programs. This includes the deprecation of currently deployed capabilities across **all** sensor models.
+1. have fully adopted ALE, SpiceQL, and the updated ISIS ingestion programs. This includes the deprecation of currently deployed capabilities across **all** sensor models. This also inludes the development, testing, and deploy of CSM sensor models for past, current, and future missions.
     - Projects using this capability: All ISIS users will be using this capability. Implementation of this capability removes the dual maintenance burden that currently exists by having two (legacy and new) implementations concurrently supported.
 1. provide automated solutions for ground control point selection using varied ground truth data sets.
     - Projects using this capability: All control projects include, but not limited to Kaguya TC, CTX, etc.
-1. be able to apply photogrammetric adjustment to solve for period, phase, and amplitude for librational movements for bodies.
-    - Projects using this capability: Outer planets control research. Phobos control efforts.
 1. include tools of workflows for adding observations to exsiting control projects.
     - Projects using this capability: THEMIS, CTX, LROC-NAC, Europa Clipper (presumptive)
 
@@ -67,16 +65,18 @@ Finally, this document makes every effort to explicitly link capabilities to ide
     - Projects using this capability: Continued CSM development efforts as this capability answers questions about the broad usability of the specification. 
 1. include tools for improved interoperability between the NASA Ames Stereopipeline, ISIS, and SocetGXP using the Community Sensor Model (CSM).
     - Projects using this capability: ASC APPL group DTM generation
-1. support simultaneous photogrammetric control solutions for Lidar and image observation data.
-    - Projects using this capability: ???
 1. distributed (HPC) photogrammetric bundle adjustment in support of exceptionally large control networks.
     - Projects using this capability: CTX, KaguyaTC, likely LROC-NAC North and South polar mosaics
-
+1. enhance the existing bundle adjustment library to support sequential photogrametric control estimation and adjustment.
+    - Projects using this capability: Large global solutions, regional solutions with high resolution data (LROC NAC or HiRISE control), and missions with sequentially updated data (e.g., THEMIS IR or to be acquired Europa Clipper data).
+    
 ##### In the next five years, the ASC software portfolio could:
+1. support simultaneous photogrammetric control solutions for Lidar and image observation data.
+    - Projects using this capability: ???
 1. improve GIS footprint generation
     - Projects using this capability: control projects and analysis ready data generation pipelines all benefit from improvements in GIS ready footprint generation.
-1. enhance the existing bundle adjustment library to support sequential photogrametric control estimation and adjustment.
-    - Projects using this capability: ???
+1. be able to apply photogrammetric adjustment to solve for period, phase, and amplitude for librational movements for bodies.
+    - Projects using this capability: Outer planets control research.
 1. support adding increased metadata to points and measures within control networks including, but not limited to photometric and/or image resolution metadata.
     - Projects using this capability: ???
 1. add capabilities to control network image registration to support adaptive reference measure selection and/or registration chaining whereby registration success is stateful and metadata about a successful registration is used in subsequent processing. 
@@ -103,16 +103,16 @@ Finally, this document makes every effort to explicitly link capabilities to ide
     - Projects using this capability: Improved generation of cosmetically appealking image mosaics
 1. support the development of cosmetically appealing and scientifically accurate image mosaics using photometric information.
     - Projects using this capability: All control projects.
-1. provide tools for the extraction of limb profiles and limb topography to improve photogrammetric control capabilities and improve shape estimation, primarily for flyby missions.
-    - Projects using this capability: ???
 1. begin supporting remote data visualization and analysis include, but not limited to observation and control network data and metadata. 
     - Projects using this capability: AutoCNet based control solutions will immediately benefit from this work. Any remote workers and users wishing to setup remote (perhaps on HPC resources) solutions.
 1. package off-the-shelf and/or custom solutions for the generation of analysis ready data and associated metadata including tooling for processing, metadata generation, and metadata management. Metadata management includes the need to update metadata and manage sematic linkages between data sets.
     - Projects using this capability: All analysis ready data (ARD) releases.
 
 ##### In the next five years, the ASC software portfolio could:
-1. include generic tools for dejittering line scan data that build off of the open source HiRISE dejittering pipeline or develop new and novel techniques for line scan dejittering to support high efficacy DTM generation.
+1. provide tools for the extraction of limb profiles and limb topography to improve photogrammetric control capabilities and improve shape estimation, primarily for flyby missions.
     - Projects using this capability: ???
+1. include generic tools for dejittering line scan data that build off of the open source HiRISE dejittering pipeline or develop new and novel techniques for line scan dejittering to support high efficacy DTM generation. (Note: this requires a non-trivial amount of research before the software team can productionize a solution. Should that research occur, this could transition higher in the priorities).
+    - Projects using this capability: DTM generation (HiRISE, CTX, LROC NAC)
 1. provide an updated method for unique observation identification (i.e., serial numbers) in order to ???
     - Projects using this capability: ???
 1. update the ISIS library be callable using Unix style command command line interfaces, (e.g., man spiceinit) in order to improve the sematic interoperability between ISIS tools and other standard Unix command line tools.
