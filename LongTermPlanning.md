@@ -1,7 +1,7 @@
-# 2022 - 2027 Strategic Plan
+# 2023 - 2028 Strategic Plan
 
 ## Executive Summary
-This document outlines the 2022-2027 strategic plan for the Astrogeology Science Center software section. The plan describes four overlapping thematic areas of effort: Cloud & Software as a Service, Sensor Models & Photogrammetric Control, Improved Usability & Independently Identified Capabilities, and Documentation & User Training. Within each thematic area, individual capabilities are organized as must-have, should-have, and could-have within the next five years.
+This document outlines the 2023-2028 strategic plan for the Astrogeology Science Center software section. The plan describes four overlapping thematic areas of effort: Cloud & Software as a Service, Sensor Models & Photogrammetric Control, Improved Usability & Independently Identified Capabilities, and Documentation & User Training. Within each thematic area, individual capabilities are organized as must-have, should-have, and could-have within the next five years.
 
 This document also describes the intended audience and proposes that this document be used to support the development and related funding decisions of the ASC software portfolio over the coming five years. The process used to generate this document is described to provide context to the reader about from whom information was sourced and how this document was drafted. This document describes how funding is currently organized. Finally, a plan for the longer-term maintenance and update cadence of the document is provided.
 
