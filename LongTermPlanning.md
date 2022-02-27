@@ -99,7 +99,7 @@ Finally, this document makes every effort to explicitly link capabilities to ide
     - Projects using this capability: ASC APPL group DTM generation
     - Supporting community policy and finding documents:
       - OMB M-13-13 Build information systems to support interoperability and information accessibility.
-        - ??
+
 1. distributed (HPC) photogrammetric bundle adjustment in support of exceptionally large control networks.
     - Projects using this capability: CTX, KaguyaTC, likely LROC-NAC North and South polar mosaics
     - Supporting community policy and finding documents:
