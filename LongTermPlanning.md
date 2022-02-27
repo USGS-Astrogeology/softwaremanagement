@@ -58,7 +58,7 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. provide explicit descriptions attached to each ASC software portfolio library describing if said library can be cloud enabled and if the library has been cloud enabled.
     - Projects using this capability: All users and developers and the bringing the lifecycles into alignment with expectations supports everyone.
     - Supporting community policy and finding documents:
-      - OMB M-16-21 5.2.D & 5.2.F: COmmunity engagement and project documentation require descriptions of project status and agency engagement levels.
+      - OMB M-16-21 5.2.D & 5.2.F: Community engagement and project documentation require descriptions of project status and agency engagement levels.
         
 ##### In the next five years, the ASC software portfolio could:
 1. develop a accessible cloud ISIS with HTTP(S) access to ISIS applications demonstrating an ISIS as a service (SaaS) solution. Initially private and then possibly publicly accessible.
