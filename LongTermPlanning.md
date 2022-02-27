@@ -154,7 +154,7 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. provide consistent installation experiences for users on explicitly supported packages including improved dependency management, installation instructions, and installation tooling.
     - Projects using this capability: Given the complex dependency versioning interactions on the ISIS project, this the prime candidate for removing installation friction though all ASC projects would benefit from lessons learned.
     - Supporting community policy and finding documents:
-      - ??
+      - SAT Finding 12 & 13: Broadly identify installation concerns and the need for an ever improving installation experience.
 
 1. expose and document Python (or other broadly use, higher-level language) access to library APIs.
     - Projects using this capability: ISIS is the primary target and beneficiary of this work. API access is **not** at the application level, rather it is at some API level.
