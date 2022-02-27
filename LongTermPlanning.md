@@ -13,7 +13,7 @@ The ASC development team and ASC technical management are more than happy to col
 ## Development and Organization
 This document is a snapshot of work initiation in July 2021 to collect ideas, input, and direction from the ASC software development team, contributors to ASC software development projects, the ISIS Technical Committee, and the broad ISIS user base. The members of these groups participated in close to a dozen in-person brainstorming and context building sessions in order to build a framework from which this LTP has been developed. 
 
-The ASC software lead has been tasked with collating the information gathered from the contributor and user community. Once collated, the identified thematic development areas have been brought into alignment with some of the driving planetary science community documents (e.g., [NASA Planetary Decadal (2013-2022)](https://science.nasa.gov/science-red/s3fs-public/atoms/files/Planetary_DS.pdf), [NASA PDE Recommendations and Findings (2021)](https://science.nasa.gov/files/science-red/s3fs-public/atoms/files/PDE%20IRB%20Final%20Report.pdf), [ISIS SAT Review (2018)](https://github.com/USGS-Astrogeology/softwaremanagement/tree/master/SpecialActionTeam_Review), [NASA Strategy for Data Management and Computing  for Groundbreaking Science 2019-2024](https://science.nasa.gov/science-red/s3fs-public/atoms/files/SDMWG%20Strategy_Final.pdf)) and with the long-term planning documents from other ASC sections. Capability prioritization (described below) was ultimately done by the ASC software lead, with significant input from the aforementioned group of people during brainstorming and context building sessions.
+The ASC software lead has been tasked with collating the information gathered from the contributor and user community. Once collated, the identified thematic development areas have been brought into alignment with some of the driving planetary science community documents (e.g., [NASA Planetary Decadal (2013-2022)](https://science.nasa.gov/science-red/s3fs-public/atoms/files/Planetary_DS.pdf), [NASA PDE Recommendations and Findings (2021)](https://science.nasa.gov/files/science-red/s3fs-public/atoms/files/PDE%20IRB%20Final%20Report.pdf), [ISIS SAT Review (2018)](https://github.com/USGS-Astrogeology/softwaremanagement/tree/master/SpecialActionTeam_Review), [NASA Strategy for Data Management and Computing  for Groundbreaking Science 2019-2024](https://science.nasa.gov/science-red/s3fs-public/atoms/files/SDMWG%20Strategy_Final.pdf), [OMB M-13-13, Open Data Policy - Managing Information as an Asset](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf), [OMB M-16-21](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2016/m_16_21.pdf)) and with the long-term planning documents from other ASC sections. Capability prioritization (described below) was ultimately done by the ASC software lead, with significant input from the aforementioned group of people during brainstorming and context building sessions.
 
 The breadth of capability development desired by the user community and development team exceeds the capabilities of the ASC software development team. This is one indicator that a thriving software portfolio exists with high user engagement. One organizational approach would be to be exclusive and remove tasks or development areas which are likely outside the reasonable scope of effort or expertise of the core development team (primarily ASC employees). Instead, this document is organizing capabilities first into larger thematic areas and then into must-do, should-do, and can-do categories with the understanding that can-do activities are likely to no be completed by the ASC development team in the next five years unless (a) unforeseen changes occur that move capabilities into different categories or (b) the addition of can-do capabilities are a natural and low effort addition to other higher priority work. In our view, it is important to explicitly describe the organizational structure and limitations of time in order to maintain shared expectations with all readers.
 
@@ -30,56 +30,113 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 ##### In the next five years, the ASC software portfolio must:
 1. include cloud enabled services with well documented APIs that are accessible by end users. One example of this is the current work to cloud enable the SPICE server with support for USGSCSM and ISIS style sensor models. These services should be documented such that they can be deployed by anyone to the same cloud hosting provider that ASC deploys them to [^clouddeploy].
     - Projects using this capability: (1) most, if not all, internal users transitioning to using the remote, cloud enabled SPICE service, (2) control projects using AutoCNet transitioning to using cloud SPICE services, (3) STAC search, data/metadata management, and catalog APIs, (4) nomenclature capabilities as more accessible APIs, and (4) other unidentified cloud enabled services which should be able to link to at least one project or user community that will make use of the service.
+    - Supporting community policy and finding documents:
+        - OMB M-1313 (Build information systems to support interoperability and information accessibility; (a) the system must be scalable and flexible.)
+        - SAT Finding 9: Found that the code is being developed openly, as requested. The natural extension to this finding is to provide open and accessible SaaS and APIs.
+        - SAT Finding 20: Broadening the SPICE web server
+        - NASA PDE Recommendation 10: The prioritization of cross organizational APIs, as opposed to individually developed APIs, benefits the community.
+
 1. provide user accessible data necessary to use libraries in the software portfolio via the cloud.
     - Projects using this capability: (1) all users performing an installation of our code base.
-  
+    - Supporting community policy and finding documents:
+      - SAT Finding 8: Increase code modularity
+      - NASA PDE Findings 40, 41, 42: Cloud and HPC are enabling technologies, pending adoption of data interoperability and usability concerns (as identified within the PDE findings). Software should be available and immediately usable as data issues are incrementally addressed.
+
 ##### In the next five years, the ASC software portfolio should:
 1. provide examples of containerized software libraries (ISIS) that are cloud deployed, including examples creating processing pipelines using one or more linked services.
     - Projects using this capability:
+    - Supporting community policy and finding documents:
+      - SAT Finding 6: Task based workflow tutorials should be made available. 
+
 1. release a cloud deployed AutoCNet with *qnet* style point/measure visualization and analysis. This need not be an AutoCNET SaaS solution for users and can rather be components such that users can (re)create the same processing environment.
     - Projects using this capability: (1) any remote (over-the-wire, where data are not local) control work can make use of a *qnet* style visualization solution, (2) control work using AutoCNet, (3) other SaaS solutions identified in the future can make use of the lessons learned.
+    - Supporting community policy and finding documents:
+      - NASA PDE Findings 40, 41, 42: Cloud and HPC are enabling technologies, pending adoption of data interoperability and usability concerns (as identified within the PDE findings). Software should be available and immediately usable as data issues are incrementally addressed.
+
 1. provide explicit descriptions attached to each ASC software portfolio library describing if said library can be cloud enabled and if the library has been cloud enabled.
     - Projects using this capability: All users and developers and the bringing the lifecycles into alignment with expectations supports everyone.
-
+    - Supporting community policy and finding documents:
+      - OMB M-16-21 5.2.D & 5.2.F: COmmunity engagement and project documentation require descriptions of project status and agency engagement levels.
+        
 ##### In the next five years, the ASC software portfolio could:
 1. develop a accessible cloud ISIS with HTTP(S) access to ISIS applications demonstrating an ISIS as a service (SaaS) solution. Initially private and then possibly publicly accessible.
     - Projects using this capability: An users wishing to move from desktop to SaaS environments.
+    - Supporting community policy and finding documents:
+        - OMB M-1313 (Build information systems to support interoperability and information accessibility; (a) the system must be scalable and flexible.)
 
 ### Sensor Models & Photogrammetric Control
 ##### In the next five years, the ASC software portfolio must:
 1. have fully adopted ALE, SpiceQL, and the updated ISIS ingestion programs. This includes the deprecation of currently deployed capabilities across **all** sensor models. This also incudes the development, testing, and deploy of CSM sensor models for past, current, and future missions.
     - Projects using this capability: All ISIS users will be using this capability. Implementation of this capability removes the dual maintenance burden that currently exists by having two (legacy and new) implementations concurrently supported.
+    - Supporting community policy and finding documents:
+      - SAT Finding 8: Increase code modularity. (This work, once completed, executes the modularization plan for SPICE data management and usage within the ISIS code base.)
+
 1. provide automated solutions for ground control point selection using varied ground truth data sets.
     - Projects using this capability: All control projects include, but not limited to Kaguya TC, CTX, etc.
+    - Supporting community policy and finding documents:
+      - SAT Finding 19: Automated image matching and feature recognition
+
 1. include tools of workflows for adding observations to existing control projects.
     - Projects using this capability: THEMIS, CTX, LROC-NAC, Europa Clipper (presumptive)
+    - Supporting community policy and finding documents:
+      - SAT Finding 19: Automated image matching and feature recognition
 
 ##### In the next five years, the ASC software portfolio should:
 1. create prototype examples of CSM sensor models for (1) multi- and hyper-spectral spectrometers and (2) incredibly long exposure time observations when one wants fine grained timing control.
     - Projects using this capability: Continued CSM development efforts as this capability completes demonstration of the CSM across all major sensor types we encounter. 
+    - Supporting community policy and finding documents:
+        - OMB M-13-13 Build information systems to support interoperability and information accessibility.
+        - OMB M-19-15 Implementation Update 3.2: the computer code for custom analysis of data (in this case sensor models), should be made available for subsequent analysis by the public (i.e., open source sensor models)
+
 1. understand how to (or not to) support J2000 within a CSM sensor model.
     - Projects using this capability: Continued CSM development efforts as this capability answers questions about the broad usability of the specification. 
+    - Supporting community policy and finding documents:
+      - 
+
 1. include tools for improved interoperability between the NASA Ames Stereopipeline, ISIS, and SocetGXP using the Community Sensor Model (CSM).
     - Projects using this capability: ASC APPL group DTM generation
+    - Supporting community policy and finding documents:
+      - OMB M-13-13 Build information systems to support interoperability and information accessibility.
+
 1. distributed (HPC) photogrammetric bundle adjustment in support of exceptionally large control networks.
     - Projects using this capability: CTX, KaguyaTC, likely LROC-NAC North and South polar mosaics
+    - Supporting community policy and finding documents:
+      -
+
 1. enhance the existing bundle adjustment library to support sequential photogrammetric control estimation and adjustment.
     - Projects using this capability: Large global solutions, regional solutions with high resolution data (LROC NAC or HiRISE control), and missions with sequentially updated data (e.g., THEMIS IR or to be acquired Europa Clipper data).
-    
+    - Supporting community policy and finding documents:
+      - 
+
 ##### In the next five years, the ASC software portfolio could:
 1. support simultaneous photogrammetric control solutions for Lidar and image observation data.
     - Projects using this capability: Control projects where lidar data are available.
+    - Supporting community policy and finding documents:
+      - 
+
 1. improve GIS footprint generation
     - Projects using this capability: control projects and analysis ready data generation pipelines all benefit from improvements in GIS ready footprint generation.
+    - Supporting community policy and finding documents:
+      - 
+
 1. be able to apply photogrammetric adjustment to solve for period, phase, and amplitude for librational movements for bodies.
     - Projects using this capability: Outer planets control research.
+    - Supporting community policy and finding documents:
+      - 
+
 1. support adding increased metadata to points and measures within control networks including, but not limited to photometric and/or image resolution metadata.
     - Projects using this capability: Photogrammetric control projects
+    - Supporting community policy and finding documents:
+      - 
 1. add capabilities to control network image registration to support adaptive reference measure selection and/or registration chaining whereby registration success is stateful and metadata about a successful registration is used in subsequent processing. 
     - Projects using this capability: Photogrammetric control projects
+    - Supporting community policy and finding documents:
+      - 
+
 1. provide additional capabilities for control network analysis.
     - Projects using this capability: Photogrammetric control projects
-
+    - Supporting community policy and finding documents:
+      - 
 
 ### Improved Usability & Independently Identified Capabilities
 
@@ -87,35 +144,75 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 ##### In the next five years, the ASC software portfolio must:
 1. release one or more versions of ISIS making use of a standard and stand-alone Input/Output library (either off-the-shelf or homegrown) with support for performance enhancing capabilities (e.g., image pyramids).
     - Projects using this capability: All ISIS users benefit from this capability due to improved performance, reduced maintenance costs (intended consequence), and standardization that should improve interoperability.
+    - Supporting community policy and finding documents:
+        - OMB M-13-13: III.1.a Use machine-readable and open formats and prioritize the the use open, non-proprietary data formats with no usage restrictions.
+        - NASA PDE Recommendation 51: tools should be developed translate common planetary formats and standards to support adoption by other science communities.
+
 1. provide consistent installation experiences for users on explicitly supported packages including improved dependency management, installation instructions, and installation tooling.
     - Projects using this capability: Given the complex dependency versioning interactions on the ISIS project, this the prime candidate for removing installation friction though all ASC projects would benefit from lessons learned.
+    - Supporting community policy and finding documents:
+      - 
+
 1. expose and document Python (or other broadly use, higher-level language) access to library APIs.
     - Projects using this capability: ISIS is the primary target and beneficiary of this work. API access is **not** at the application level, rather it is at some API level.
-1. standardize onto a single set of web3.0 technologies and frameworks to support data accessibility, discoverability, and access by users such that data access portals can be developed at lower costs across project areas
+    - Supporting community policy and finding documents:
+      - SAT Finding 21: Provide high level Python API to the community.
+
+1. standardize onto a single set of web technologies and frameworks to support data accessibility, discoverability, and access by users such that data access portals can be developed at lower costs across project areas
     - Projects using this capability: All ASC Data section releases seeking custom online solutions (e.g., terrestrial analogs data portal, nomenclature, PDS web mapping and processing portal, geologic mapping data portal, etc.)
+    - Supporting community policy and finding documents:
+      - OMB M-16-16 III.1.a Open data must be available in accessible, searchable, and convenient formats
+      - NASA PDE Finding 50 / Recommendation 36: Terrestrial analog data do not have a primary repository. (This effort tangentially addresses this through the development and support of a clearing house of terrestrial analog data.)
   
 
 ##### In the next five years, the ASC software portfolio should:
 1. provide improved photometric modelling capabilities including examples of off-the-shelf tools for large data visualization and analysis, and support for the inclusion of atmospheric and/or band information in the analysis process.
     - Projects using this capability: Improved generation of cosmetically appealing image mosaics
+    - Supporting community policy and finding documents:
+      - 
+
 1. support the development of cosmetically appealing and scientifically accurate image mosaics using photometric information.
     - Projects using this capability: All control projects.
+    - Supporting community policy and finding documents:
+      - 
+
 1. begin supporting remote data visualization and analysis include, but not limited to observation and control network data and metadata. 
     - Projects using this capability: AutoCNet based control solutions will immediately benefit from this work. Any remote workers and users wishing to setup remote (perhaps on HPC resources) solutions.
+    - Supporting community policy and finding documents:
+      - 
+
 1. package off-the-shelf and/or custom solutions for the generation of analysis ready data and associated metadata including tooling for processing, metadata generation, and metadata management. Metadata management includes the need to update metadata and manage sematic linkages between data sets.
     - Projects using this capability: All analysis ready data (ARD) releases.
+    - Supporting community policy and finding documents:
+      - OMB M-16-16: I.Open Data.Described Open / III.1.d data are fully described so that consumers can assess their usability through common core and extensible  metadata. 
+      - OMB M-19-15: Implementation Update 2.2 Agencies should provide users with adequate data documentation to support a user's determination of fitness-for-use
+      - NASA PDE Recommendation 32: Recommends that NASA should develop archives for analysis ready data (ARD). This work is facilitating technology for building one such archive.
+      - NASA PDE Recommendation 53: Recommends that data linkages and types are clearly documented. This work is facilitating technology.
 
 ##### In the next five years, the ASC software portfolio could:
 1. provide tools for the extraction of limb profiles and limb topography to improve photogrammetric control capabilities and improve shape estimation, primarily for flyby missions.
     - Projects using this capability: Science investigations
+    - Supporting community policy and finding documents:
+      - 
 1. include generic tools for dejittering line scan data that build off of the open source HiRISE dejittering pipeline or develop new and novel techniques for line scan dejittering to support high efficacy DTM generation. (Note: this requires a non-trivial amount of research before the software team can productionize a solution. Should that research occur, this could transition higher in the priorities).
     - Projects using this capability: DTM generation (HiRISE, CTX, LROC NAC)
+    - Supporting community policy and finding documents:
+      - 
+
 1. update the ISIS library be callable using Unix style command line interfaces, (e.g., man spiceinit) in order to improve the sematic interoperability between ISIS tools and other standard Unix command line tools.
     - Projects using this capability: No projects explicitly use this capability. Instead, all users would potentially benefit from logical consistency across tools.
+    - Supporting community policy and finding documents:
+      - NASA PDE Finding 61: Many PDE elements are designed for expert users and should be made moe accessible. (This effort would align the use of the ISIS code base with unix standards, thereby removing the custom structure of current commands.)
+
 1. include increased adoption of targeted parallelization efforts in order to improve single machine performance for tasks with long runtimes.
     - Projects using this capability: Potential benefit across a range of users
+    - Supporting community policy and finding documents:
+      - SAT Finding 16: Software optimization
+
 1. provide an updated method for unique observation identification (i.e., serial numbers).
     - Projects using this capability: Described in the context of control. Needs additional project linkages if work is undertaken.
+    - Supporting community policy and finding documents:
+      - 
 
 
 ### Documentation & User Training
@@ -128,7 +225,15 @@ The highest priority capabilities that must be realized over the next five years
 
 The person-time cost to generate in-person learning experiences, particularly by persons without pedagogical training is quite high. The scope of impact from in-person training opportunities is limited by the number of persons in attendance and then further limited by the follow-on opportunities for those attendees to practice the skills learned. The development time of high quality, asynchronously accessible tutorials and learning examples, backed by a thriving question and answer community, for example via a Q&A website, can also be high. The ability for learners to not only use, but also asynchronously interact with other learners and project contributors is why this document prioritizes this type of documentation and learning over in-person activities.
 
-This section does not link explicitly to projects that benefit because improved documentation is broadly impactful.
+This section does not link explicitly to projects that benefit because improved documentation is broadly impactful. This section also enumerates specific documentation tasks that are more granular than the policy and findings documents that explicitly support this effort. Therefore, instead of inlining references to those documents alongside each capability, those linkages are enumerate here:
+
+- OMB M-16-21: 5.2F Provide documentation that includes the software status, intended purpose, expected activity cadence, license details, and technical usage details.
+- OMB M-16-21: 5.2B Engage in open software development that includes making source code available and engaging the community to improve development outcomes
+- SAT Finding 6: Task based workflow tutorials should be made available.
+- NASA PDE Recommendation 10: NASA should prioritize the use of data/metadata standards including APIs. By extension, these standards and APIs need to be well documented, ideally using documentation standards (e.g., the OpenAPI specification), in order to be usable beyond the authors and/or maintainers of the API.
+- NASA PDE Recommendation 50: The development of educational and documentation materials is essential to meet high priority user needs.
+- NASA PDE Recommendation 54: Developer advocacy that includes means for developers to learn about API usage to support their work.
+- NASA PDE Finding 67 / Recommendation 64: There are inadequate training opportunities for software users. This section addresses this finding directly.
 
 ##### In the next five years, the ASC software portfolio must:
 1. make centralized and searchable documentation available to all users using a standard deploy framework.
@@ -143,7 +248,7 @@ This section does not link explicitly to projects that benefit because improved 
 1. select an explicit schema for describing the maturity of projects in the software portfolio and draft public facing policies that describe said schema. 
 1. evangelize the availability of API backed services for use by external service and tool developers to support de-duplication of effort. Together with this effort is the adoption of services provided by others.
 
-##### In the next five years, the ASC software portfolio could:
+##### In the next five years, the ASC software portfolio could
 1. select off-the-shelf or develop and deploy metrics tracking for adoption of remotely accessible APIs (i.e., services).
 1. initiate efforts to actively train novice users across communities (with a focus on reaching traditionally underserved communities) through workshops, office hours, or other face-to-face (digital or in-person) efforts. 
 
