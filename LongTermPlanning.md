@@ -31,16 +31,18 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. include cloud enabled services with well documented APIs that are accessible by end users. One example of this is the current work to cloud enable the SPICE server with support for USGSCSM and ISIS style sensor models. These services should be documented such that they can be deployed by anyone to the same cloud hosting provider that ASC deploys them to [^clouddeploy].
     - Projects using this capability: (1) most, if not all, internal users transitioning to using the remote, cloud enabled SPICE service, (2) control projects using AutoCNet transitioning to using cloud SPICE services, (3) STAC search, data/metadata management, and catalog APIs, (4) nomenclature capabilities as more accessible APIs, and (4) other unidentified cloud enabled services which should be able to link to at least one project or user community that will make use of the service.
     - Supporting community policy and finding documents:
-        - OMB M-1313 (Build information systems to support interoperability and information accessibility; (a) the system must be scalable and flexible.)
+        - OMB M-13-13 Build information systems to support interoperability and information accessibility; (a) the system must be scalable and flexible.
         - SAT Finding 9: Found that the code is being developed openly, as requested. The natural extension to this finding is to provide open and accessible SaaS and APIs.
         - SAT Finding 20: Broadening the SPICE web server
         - NASA PDE Recommendation 10: The prioritization of cross organizational APIs, as opposed to individually developed APIs, benefits the community.
+        - NASA SDMCGS 2.3: Support the use of commercial cloud capabilities for open science to make data accessible to a diverse et of users.
 
 1. provide user accessible data necessary to use libraries in the software portfolio via the cloud.
     - Projects using this capability: (1) all users performing an installation of our code base.
     - Supporting community policy and finding documents:
       - SAT Finding 8: Increase code modularity
       - NASA PDE Findings 40, 41, 42: Cloud and HPC are enabling technologies, pending adoption of data interoperability and usability concerns (as identified within the PDE findings). Software should be available and immediately usable as data issues are incrementally addressed.
+      - NASA SDMCGS 2.3: Support the use of commercial cloud capabilities for open science to make data accessible to a diverse et of users.
 
 ##### In the next five years, the ASC software portfolio should:
 1. provide examples of containerized software libraries (ISIS) that are cloud deployed, including examples creating processing pipelines using one or more linked services.
@@ -91,52 +93,53 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. understand how to (or not to) support J2000 within a CSM sensor model.
     - Projects using this capability: Continued CSM development efforts as this capability answers questions about the broad usability of the specification. 
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 1. include tools for improved interoperability between the NASA Ames Stereopipeline, ISIS, and SocetGXP using the Community Sensor Model (CSM).
     - Projects using this capability: ASC APPL group DTM generation
     - Supporting community policy and finding documents:
       - OMB M-13-13 Build information systems to support interoperability and information accessibility.
-
+        - ??
 1. distributed (HPC) photogrammetric bundle adjustment in support of exceptionally large control networks.
     - Projects using this capability: CTX, KaguyaTC, likely LROC-NAC North and South polar mosaics
     - Supporting community policy and finding documents:
-      -
+      - ??
 
 1. enhance the existing bundle adjustment library to support sequential photogrammetric control estimation and adjustment.
     - Projects using this capability: Large global solutions, regional solutions with high resolution data (LROC NAC or HiRISE control), and missions with sequentially updated data (e.g., THEMIS IR or to be acquired Europa Clipper data).
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 ##### In the next five years, the ASC software portfolio could:
 1. support simultaneous photogrammetric control solutions for Lidar and image observation data.
     - Projects using this capability: Control projects where lidar data are available.
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 1. improve GIS footprint generation
     - Projects using this capability: control projects and analysis ready data generation pipelines all benefit from improvements in GIS ready footprint generation.
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 1. be able to apply photogrammetric adjustment to solve for period, phase, and amplitude for librational movements for bodies.
     - Projects using this capability: Outer planets control research.
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 1. support adding increased metadata to points and measures within control networks including, but not limited to photometric and/or image resolution metadata.
     - Projects using this capability: Photogrammetric control projects
     - Supporting community policy and finding documents:
-      - 
+      - ??
+
 1. add capabilities to control network image registration to support adaptive reference measure selection and/or registration chaining whereby registration success is stateful and metadata about a successful registration is used in subsequent processing. 
     - Projects using this capability: Photogrammetric control projects
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 1. provide additional capabilities for control network analysis.
     - Projects using this capability: Photogrammetric control projects
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 ### Improved Usability & Independently Identified Capabilities
 
@@ -151,7 +154,7 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. provide consistent installation experiences for users on explicitly supported packages including improved dependency management, installation instructions, and installation tooling.
     - Projects using this capability: Given the complex dependency versioning interactions on the ISIS project, this the prime candidate for removing installation friction though all ASC projects would benefit from lessons learned.
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 1. expose and document Python (or other broadly use, higher-level language) access to library APIs.
     - Projects using this capability: ISIS is the primary target and beneficiary of this work. API access is **not** at the application level, rather it is at some API level.
@@ -169,17 +172,17 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. provide improved photometric modelling capabilities including examples of off-the-shelf tools for large data visualization and analysis, and support for the inclusion of atmospheric and/or band information in the analysis process.
     - Projects using this capability: Improved generation of cosmetically appealing image mosaics
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 1. support the development of cosmetically appealing and scientifically accurate image mosaics using photometric information.
     - Projects using this capability: All control projects.
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 1. begin supporting remote data visualization and analysis include, but not limited to observation and control network data and metadata. 
     - Projects using this capability: AutoCNet based control solutions will immediately benefit from this work. Any remote workers and users wishing to setup remote (perhaps on HPC resources) solutions.
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 1. package off-the-shelf and/or custom solutions for the generation of analysis ready data and associated metadata including tooling for processing, metadata generation, and metadata management. Metadata management includes the need to update metadata and manage sematic linkages between data sets.
     - Projects using this capability: All analysis ready data (ARD) releases.
@@ -193,11 +196,12 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. provide tools for the extraction of limb profiles and limb topography to improve photogrammetric control capabilities and improve shape estimation, primarily for flyby missions.
     - Projects using this capability: Science investigations
     - Supporting community policy and finding documents:
-      - 
+      - ??
+
 1. include generic tools for dejittering line scan data that build off of the open source HiRISE dejittering pipeline or develop new and novel techniques for line scan dejittering to support high efficacy DTM generation. (Note: this requires a non-trivial amount of research before the software team can productionize a solution. Should that research occur, this could transition higher in the priorities).
     - Projects using this capability: DTM generation (HiRISE, CTX, LROC NAC)
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 1. update the ISIS library be callable using Unix style command line interfaces, (e.g., man spiceinit) in order to improve the sematic interoperability between ISIS tools and other standard Unix command line tools.
     - Projects using this capability: No projects explicitly use this capability. Instead, all users would potentially benefit from logical consistency across tools.
@@ -212,7 +216,7 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. provide an updated method for unique observation identification (i.e., serial numbers).
     - Projects using this capability: Described in the context of control. Needs additional project linkages if work is undertaken.
     - Supporting community policy and finding documents:
-      - 
+      - ??
 
 
 ### Documentation & User Training
