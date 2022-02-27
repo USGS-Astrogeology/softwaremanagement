@@ -13,7 +13,7 @@ The ASC development team and ASC technical management are more than happy to col
 ## Development and Organization
 This document is a snapshot of work initiation in July 2021 to collect ideas, input, and direction from the ASC software development team, contributors to ASC software development projects, the ISIS Technical Committee, and the broad ISIS user base. The members of these groups participated in close to a dozen in-person brainstorming and context building sessions in order to build a framework from which this LTP has been developed. 
 
-The ASC software lead has been tasked with collating the information gathered from the contributor and user community. Once collated, the identified thematic development areas have been brought into alignment with some of the driving planetary science community documents (e.g., [NASA Planetary Decadal (2013-2022)](https://science.nasa.gov/science-red/s3fs-public/atoms/files/Planetary_DS.pdf), [NASA PDE Recommendations and Findings (2021)](https://science.nasa.gov/files/science-red/s3fs-public/atoms/files/PDE%20IRB%20Final%20Report.pdf), [ISIS SAT Review (2018)](https://github.com/USGS-Astrogeology/softwaremanagement/tree/master/SpecialActionTeam_Review), [NASA Strategy for Data Management and Computing  for Groundbreaking Science 2019-2024](https://science.nasa.gov/science-red/s3fs-public/atoms/files/SDMWG%20Strategy_Final.pdf), [OMB M-13-13, Open Data Policy - Managing Information as an Asset](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf), [OMB M-16-21](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2016/m_16_21.pdf)) and with the long-term planning documents from other ASC sections. Capability prioritization (described below) was ultimately done by the ASC software lead, with significant input from the aforementioned group of people during brainstorming and context building sessions.
+The ASC software lead has been tasked with collating the information gathered from the contributor and user community. Once collated, the identified thematic development areas have been brought into alignment with some of the driving planetary science community documents (e.g., [NASA Planetary Decadal (2013-2022)](https://science.nasa.gov/science-red/s3fs-public/atoms/files/Planetary_DS.pdf), [NASA PDE Recommendations and Findings (2021)](https://science.nasa.gov/files/science-red/s3fs-public/atoms/files/PDE%20IRB%20Final%20Report.pdf), [ISIS SAT Review (2018)](https://github.com/USGS-Astrogeology/softwaremanagement/tree/master/SpecialActionTeam_Review), [NASA Strategy for Data Management and Computing  for Groundbreaking Science 2019-2024](https://science.nasa.gov/science-red/s3fs-public/atoms/files/SDMWG%20Strategy_Final.pdf), [OMB M-13-13, Open Data Policy - Managing Information as an Asset](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf), [OMB M-16-21](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2016/m_16_21.pdf)) and with the long-term planning documents from other ASC sections. Specifically, many of the photogrammetric control and sensor model improvements are linked to product generation priorities that have been drawn from documents such as the [Lunar Critical Data Products SAT report](https://www.lpi.usra.edu/mapsit/standup-committees/LCDP-SAT-REPORT-20211110.pdf), the [Artemis  III SDT draft report](https://lunarscience.arc.nasa.gov/artemis-sdt/downloads/Artemis_III_SDT_DRAFT_Report_STM.pdf), and the previously linked decadal. Capability prioritization (described below) was ultimately done by the ASC software lead, with significant input from the aforementioned group of people during brainstorming and context building sessions.
 
 The breadth of capability development desired by the user community and development team exceeds the capabilities of the ASC software development team. This is one indicator that a thriving software portfolio exists with high user engagement. One organizational approach would be to be exclusive and remove tasks or development areas which are likely outside the reasonable scope of effort or expertise of the core development team (primarily ASC employees). Instead, this document is organizing capabilities first into larger thematic areas and then into must-do, should-do, and can-do categories with the understanding that can-do activities are likely to no be completed by the ASC development team in the next five years unless (a) unforeseen changes occur that move capabilities into different categories or (b) the addition of can-do capabilities are a natural and low effort addition to other higher priority work. In our view, it is important to explicitly describe the organizational structure and limitations of time in order to maintain shared expectations with all readers.
 
@@ -93,7 +93,8 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. understand how to (or not to) support J2000 within a CSM sensor model.
     - Projects using this capability: Continued CSM development efforts as this capability answers questions about the broad usability of the specification. 
     - Supporting community policy and finding documents:
-      - ??
+      - OMB M-13-13 Build information systems to support interoperability and information accessibility.
+      - OMB M-19-15 Implementation Update 3.2: the computer code for custom analysis of data (in this case sensor models), should be made available for subsequent analysis by the public (i.e., open source sensor models)
 
 1. include tools for improved interoperability between the NASA Ames Stereopipeline, ISIS, and SocetGXP using the Community Sensor Model (CSM).
     - Projects using this capability: ASC APPL group DTM generation
@@ -103,18 +104,18 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. distributed (HPC) photogrammetric bundle adjustment in support of exceptionally large control networks.
     - Projects using this capability: CTX, KaguyaTC, likely LROC-NAC North and South polar mosaics
     - Supporting community policy and finding documents:
-      - ??
+      - See ASC products LTP. Specifically, the need to develop large spatial extent foundational data products for the Moon and Mars.
 
 1. enhance the existing bundle adjustment library to support sequential photogrammetric control estimation and adjustment.
     - Projects using this capability: Large global solutions, regional solutions with high resolution data (LROC NAC or HiRISE control), and missions with sequentially updated data (e.g., THEMIS IR or to be acquired Europa Clipper data).
     - Supporting community policy and finding documents:
-      - ??
+      - See ASC products LTP. Specifically, the need to develop large spatial extent foundational data products for the Moon and Mars.
 
 ##### In the next five years, the ASC software portfolio could:
 1. support simultaneous photogrammetric control solutions for Lidar and image observation data.
     - Projects using this capability: Control projects where lidar data are available.
     - Supporting community policy and finding documents:
-      - ??
+      - See ASC products LTP. Specifically, the need to develop foundational data products for the Moon.
 
 1. improve GIS footprint generation
     - Projects using this capability: control projects and analysis ready data generation pipelines all benefit from improvements in GIS ready footprint generation.
@@ -172,12 +173,12 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. provide improved photometric modelling capabilities including examples of off-the-shelf tools for large data visualization and analysis, and support for the inclusion of atmospheric and/or band information in the analysis process.
     - Projects using this capability: Improved generation of cosmetically appealing image mosaics
     - Supporting community policy and finding documents:
-      - ??
+      - See ASC products LTP. Specifically, the need to develop large spatial extent foundational data products for the Moon and Mars.
 
 1. support the development of cosmetically appealing and scientifically accurate image mosaics using photometric information.
     - Projects using this capability: All control projects.
     - Supporting community policy and finding documents:
-      - ??
+      - See ASC products LTP. Specifically, the need to develop foundational data products for the Moon and Mars.
 
 1. begin supporting remote data visualization and analysis include, but not limited to observation and control network data and metadata. 
     - Projects using this capability: AutoCNet based control solutions will immediately benefit from this work. Any remote workers and users wishing to setup remote (perhaps on HPC resources) solutions.
@@ -201,7 +202,7 @@ Finally, this document makes every effort to explicitly link capabilities to ide
 1. include generic tools for dejittering line scan data that build off of the open source HiRISE dejittering pipeline or develop new and novel techniques for line scan dejittering to support high efficacy DTM generation. (Note: this requires a non-trivial amount of research before the software team can productionize a solution. Should that research occur, this could transition higher in the priorities).
     - Projects using this capability: DTM generation (HiRISE, CTX, LROC NAC)
     - Supporting community policy and finding documents:
-      - ??
+      - See ASC products LTP. Specifically, the need to develop foundational data products for the Moon and Mars.
 
 1. update the ISIS library be callable using Unix style command line interfaces, (e.g., man spiceinit) in order to improve the sematic interoperability between ISIS tools and other standard Unix command line tools.
     - Projects using this capability: No projects explicitly use this capability. Instead, all users would potentially benefit from logical consistency across tools.
