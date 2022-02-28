@@ -1,462 +1,275 @@
-# Long-term Plan for USGS Astrogeology Science Center Software Development
-
-*Last updated: September 10, 2020*
-
-For additional information about the projects listed under each objective, please see the associated directory for the given fiscal year. For example, if you are interested in the *ISIS PVL and BLOB Extraction* project listed under objective 1, please see the FY21 directory README.
-
-## Objective 1: Initiate and foster an open source community, initially centered around software developed by the ASC (including ISIS).
-
-The ASC software portfolio, including the source code, has always been
-distributed at no cost, but the planetary community has not had a means
-to contribute any modifications, enhancements, or original solutions to
-this portfolio. By Open Sourcing the ISIS (and other) software, the ASC
-intends to build a community of users and developers who can more easily
-modify and share enhancements to this software. This change would
-improve our collective ability to meet community needs by bringing
-together experts in sensor models, projections, and spatial data who
-collectively will make a more robust and functional software than any
-single group could do alone. This objective also directly addresses
-several findings from the [NASA-MAPSIT Special Action Team (SAT) review](https://github.com/USGS-Astrogeology/softwaremanagement/tree/master/SpecialActionTeam_Review)
-of the ASC software portfolio, including findings 4, 5, 9, 11, 13, and
-15.
-
-#### Ongoing Efforts:
-
--   Continue to be the steward of ISIS, continue to facilitate and work
-    towards broad participation by contributors (addresses SAT
-    finding 4).
-
--   Maintain mechanisms for widespread use for user engagement with the
-    ASC software portfolio and its developers (addresses SAT finding 5).
-
--   Maintain a formal Open Source governance policy that clearly
-    describes how outside contribution can be submitted, including
-    required coding standards, and the process for incorporating them
-    into the code base (addresses SAT finding 11).
-
--   Continue to release the ASC software portfolio code base on a public
-    GitHub (addresses SAT finding 9).
-
--   Release all ISIS general and test data so that outside developers
-    can also run, and expand upon, these tests (addresses SAT findings
-    13 and 15).
-
-#### Activities in FY 20:
-
--   Open Source Community Development 
--   ASC Software Portfolio Releasees 
--   Indirectly addressed by ISIS Testing Modularization 
-
-#### Acitvities in FY 21:
-
-- Open Source Community Development
-- ISIS Application Modularization
-- ISIS PVL and BLOB Extraction
-
-#### Longer-term (5-year horizon):
-
--   Evaluate the effectiveness of our efforts and make reasonable
-    changes to our approach based on community feedback and lessons
-    learned.
-- Support a planetary software stack composed of ASC and non-ASC software packages
-- Build and support the external development of community desired analytical tools that make use of our lower level, gold standard, libraries.
-
----
-
-## Objective 2: Improve the performance of the code base and the user experience.
-The ASC will build, support, and integrate with the infrastructure necessary for users to install our software with a minimum amount of effort. The ASC will also release software at a cadence selected to support the largest possible subset of the community. Additionally, ASC will seek to improve the user experience by, when possible, reducing the total volume of data necessary to store locally and improving the overall performance (speed) of the code base.
-
-#### Ongoing Efforts:
-
--   Continue to improve the ISIS build system, through regular support
-    and maintenance.
-
--   Continue to improve the ISIS distribution system by maintaining the
-    conda-based distribution system to provide a more universal binary
-    distribution of ISIS (addresses SAT finding 12) and continuing to
-    improve this distribution system in response to user feedback
-    (addresses SAT finding 13).
-
--   Continued software support and maintenance of the ISIS codebase
-    (addresses SAT finding 24).
-
--   Improve the availability of appropriate test data (addresses SAT
-    finding 15).
-
--   Maintain continuous deployment.
-
--   Improve application performance, when needed (addresses SAT finding
-    16).
-
--   Continue to improve ISIS program documentation both as new
-    functionality is developed and as performance or accuracy concerns
-    are identified and addressed within the legacy codebase (addresses
-    SAT finding 6).
-
-#### Activities in FY 20:
-
--   ASC Software Support 
--   Improvement of ISIS third party dependency management 
--   ISIS Testing Modularization 
-
-#### Activities in FY21:
-- Remote SPICE Calibration 
-- ISIS3 to ISISX cleanup
-- ISIS Application Modularization
-- ISIS PVL and BLOB Extraction
-- 
-
-#### Longer-term (5-year horizon):
-
--   Evaluate the effectiveness of our efforts and continue to be
-    response to community feedback and lessons learned.
-- Fully transition to supporting remote SPICE server capibility reducing the total data volume significantly.
-- Explore the potential for remote data processing in line with the general shift to cloud based data storage and processing in collaboration with our user base.
-
----
-
-## Objective 3: Modularize components of ISIS and support published APIs.
-
-The ASC will build and maintain a stable software API and separate,
-smaller libraries, which will, over time, replace the current ISIS
-software portfolio. Like ISIS, this suite of Open Source applications
-will continue to meet the infrastructural needs of the planetary
-community. We envision a transitional approach to replacing the ISIS
-software system (as opposed to a ‘cut-over’), while continuing to
-provide high-level support to current missions and ensuring that data
-processing and product production pipelines are interrupted as little as
-possible.
-
-#### Activities in FY 20:
-
--   ISIS Testing Modularization 
--   Community Sensor Model Bundle Adjustment 
--   Complete ALE Integration 
--   Develop and release a Request for Comment (RFC) regarding the ISIS
-    Software Modularization plan
-    -   Appropriately incorporate community feedback into this plan
-    -   Maintain the publicly available ISIS Software Modularization
-        plan by updating the document at least annually (addresses SAT
-        finding 8).
-
-#### Activites in FY 21:
-
-- ISIS Application Modularization
-- ISIS PVL and BLOB Extraction
-
-#### Longer-term (5-year horizon):
-
--   Transition the suite of ISIS control network programs into a
-    stand-alone application.
--   Evaluate the benefits of developing a Python API for ISIS by openly
-    discussing and planning this API with the OS community (addresses
-    SAT finding 21).
--   Astro will deprecate old software by (when applicable) processing
-    data using that software, releasing these minimally derived products
-    to the community in a usable format, and archiving the software
-    itself (potentially in the PDS).
-
----
-
-### Objective 4: Maintain and improve software support for ongoing, legacy, and future missions, with a focus on interoperability and reduced maintenance costs.
-
-The Astrogeology Science Center (ASC) has historically supported
-planetary missions that are currently active, are being developed, and
-are no longer operational (i.e., retired missions).  In addition, an
-external review board found that the ASC’s role in NASA mission support
-has been a cornerstone of the planetary science community, and that it
-should continue and improve (SAT finding 17). The ASC supports missions
-by developing and maintaining camera models, aiding in the development
-of data processing pipelines, developing software and the capability to
-generate Digital Terrain Models (DTMs) for planetary sensors, and can
-provide guidance in the geometric calibration of the instrument both
-before and after flight. The support of missions is a fundamental
-service that ASC currently provides, not only to the mission, but by
-extension to the planetary community as a whole and is a role that we
-should continue to fill.
-
-#### Ongoing Efforts:
-
--   Address mission-related software concerns, often through the Open
-    Source community and in direct collaboration with mission teams (addresses
-    SAT finding 17).
-
-    -   Continue to improve the responsiveness that ASC can offer active
-        mission teams.
-
-    -   Advocate for early involvement and consistent communication with
-        mission and instrument teams to help to maintain support.
-
-    -   Offer to provide mission teams a technical contact role between
-        the ASC and the team.
-
-    -   Continue to clearly communicate to missions scheduling and other
-        resource constraints that allow both parties to plan and
-        adequately budget for mission support.
-
--   Preserve and maintain support for current sensor models and develop
-    new sensor models
-
--   Increase camera/sensor model interoperability
-
--   Improve SPICE infrastructure
-
-#### Activities in FY 20:
-
--   Community Sensor Model 
--   Complete ALE Integration 
--   Lidar Support 
-
-#### Activities in FY 21:
-- Community Sensor Model
-- PDS4 Support
-- ISIS Mission Support
-- Community Support (Participation in both the PlanetarySoftware and ISIS Technical Committee Organizations)
-- Remote SPICE
-
-#### Longer-term (5-year horizon):
-
--   ~~PDS4 support may be needed in the near future (in-progress for
-    CASSIS and Hayabusa 1), and a means to more easily generate PDS4
-    metadata and support files will be required.~~ (Executing in FY21.)
-- Work as members of the ISIS TC to determine mission needs with respect to software development and release practices.
-- Work as members of mission teams for intial implementation of rigurously tested sensor models, ingestion programs, and where appropriate processing pipelines that support many foundational aspects of mission success.
-- Work as members of the support community to address issues as they are reported to our software projects.
-- Continue to modularize our software with the goals of (1) improving our testing confidence and the confidence of mission teams in the efficacy of their pipelines and (2) making the process of pipeline development using components of our software portfolio more straight forward.
-
----
-
-## Objective 5: Continue to develop and integrate the Community Sensor Model into planetary science applications.
-
-Rigorous sensor models are a fundamental requirement for computing the
-geospatial properties for planetary image observations and are used
-widely in the core cartographic, control solutions, and
-orthorectification applications. The creation of accurate orthorectified
-planetary images (ortho-images) is critical for a wide variety of
-geospatial activities including production of digital mosaics, digital
-elevation models from stereo imagery, change detection, landing site
-analysis, geologic mapping, rover traverse planning, and spectral
-analysis. To better support software interoperability between different
-photogrammetric applications (including ISIS), we will continue to
-implement the Community Sensor Model (CSM) standard. Over the last two
-years, Astrogeology has been actively developing and testing the CSM
-standard in order to support interoperability across a range of software
-tools including SOCET GXP, ENVI, ISIS, and within a stand-alone Python
-testing environment. For the CSM standard, there are much longer-term
-goals to see this standard used across the community, as it is used by
-the military, to standardize sensor models for future proposed
-instruments.
-
-#### Activities in FY 20:
-
--   Community Sensor Model 
--   Community Sensor Model Bundle Adjustment 
--   Contract NASA Ames to implement these same camera models in Ames
-    Stereo Pipeline both to test this standard outside of Astrogeology
-    and to help promote this standard across the community
-
-#### Activities in FY 21:
-- Community Sensor Model
-- Contract NASA Ames to implement these same camera models in Ames
-    Stereo Pipeline both to test this standard outside of Astrogeology
-    and to help promote this standard across the community.
-
-#### Longer-term (5-year horizon):
-
--   ~~Determine criteria for transitioning current ISIS sensor models into
-    the CSM.~~ (Executing in FY21)
--   Determine a means to continue supporting historical data sets that
-    rely on ISIS sensor models.
-- Determine whether dual sensor model development is a valuable method to support additional rigurous testing.
-
----
-
-## Objective 6: Improve the scalability of ASC control applications.
-
-The development of rigorous geodetic and/or photogrammetric control
-networks are fundamental to generating local, regional, and global
-mosaics, and subsequent foundational products such as image-based
-topography and orthoimagery. The ASC has established itself as a leader
-in the field of planetary geodetic and photogrammetric control. However,
-continued leadership requires that we continue to improve our technical
-capabilities.
-
-#### Ongoing Efforts:
-
--   Improve our capability to identify and monitor the health of a
-    photogrammetric control network.
--   Develop new and improve existing automated matching capabilities for
-    image datasets (addresses SAT finding 19).
--   Develop methods to automate tying to ground
-
-#### Activities in FY20:
-
--   Quantitative metrics for control network 
--   CTX Controlled Mosaic Generation 
-
-
-#### Activities in FY21:
--   Operationalize FY 20 Quantitative metrics for control network
--   Continue CTX Controlled Mosaic Generation
-
-#### Longer-term (5-year horizon):
-
--   Develop improved capabilities to handle large data and network
-    volumes.
--   Include robust error propagation in bundle adjustment and improved
-    documentation describing the bundle adjustment output.
-
----
-
-## Objective 7: Increase our support of small and irregular-shaped bodies
-
-Small bodies are an increasingly high priority to NASA Headquarters. To
-date, specific missions have funded the ASC to develop software
-solutions to address the specific needs of that mission (e.g., ROSSETTA,
-DAWN, OSIRIS-Res). Although many of these solutions are applicable to
-all small and irregular bodies, the improved coordination of these
-efforts, both within the ASC and with outside collaborators), will
-maximize the ability of the community to support both existing and
-future missions. The ASC will continue to develop generic solutions that can then
-be applied to a wide range of small bodies and coordinate efforts with
-missions and collaborators.
-
-#### Activities in FY 20:
-
--   Occlusion: Robust Orthorectification in ISIS 
-
-    -   Research and prototype efforts
-
--   Continue collaborations with the Small Body Mapping Tool and mission
-    teams, with the goal of avoiding duplication of efforts and
-    encouraging a unified approach to software in support of small
-    bodies with a focus on interoperability.
-
-#### Activities in FY 21:
-- Collaboration between ASC staff and the Small Body Mapping Tool development team
-
-#### Longer-term (5-year horizon):
-
--   Through discussions with the broader planetary community, determine
-    clear data processing, projection, and analysis needs, and determine
-    how the ASC can best contribute.
-
----
-
-## Objective 8: Continually improve the effectiveness by which the ASC manages software development.
-
-The planetary community relies on the infrastructural software developed
-by the ASC to process planetary data and generate higher-order derived
-products. As a result, it is paramount that the ASC software portfolio
-is developed with a strategic long-term vision that integrates the needs
-of active and developing missions, research scientists, and developers
-building upon the applications provided. We acknowledge that substantial
-internal variability over time in various parts of the ISIS codebase has
-occurred, and that these inconsistencies make developing external code
-against ISIS very difficult. We seek to minimize these difficulties,
-both for internal ASC developers and for the outside community and
-facilitate the development of a community-based set of infrastructural
-software through means discussed below.
-
-#### Ongoing Efforts:
-
--   Maintain an ASC software management structure, which includes the
-    following (addresses SAT finding 22):
-
-    -   Software Development Lead (currently Jay Laura;
-        <jlaura@usgs.gov> / @jlaura)
-
-        -   Ensure responsiveness and traceability to ASC and community
-            scientific use cases, funded projects, and mission support
-
-        -   Serves as a public advocate for the Astro software portfolio
-
-        -   Encourages participation in the OS community
-
-        -   Facilitates addressing concerns from the community
-
-        -   Gathers comprehensive information regarding community
-            software needs and the effectiveness this software
-            management model.
-
-        -   Technical responsibility for strategic direction of software
-            development by ensuring that the strategic goals are
-            technically feasible and appropriate.
-
-    -   Technical Operations Lead (currently Robin Fergason;
-        <rfergason@usgs.gov> / @rfergason)
-
-        -   Provides direct oversight to help ensures that the ASC
-            software development portfolio meets user needs and
-            completes funded obligations.
-
-        -   Supports the Software Development Lead in fulfilling
-            actions.
-
-        -   Aids in gathering comprehensive information regarding
-            community software needs and the effectiveness this software
-            management model.
-
-        -   General responsibility for strategic direction of software
-            development by ensuring responsiveness to the high-priority
-            needs of a broad community.
-
--   Support the efforts of ASC project specific [Technical Steering
-    Committee](https://github.com/USGS-Astrogeology/TSC) by allowing
-    those committee members to make decisions on how to implement
-    identified community needs/tasks into the existing OS software
-    (addresses SAT finding 22).
-
-    -   Subject-based committee that provides technical expertise for
-        topics that effect multiple missions and projects
-
-    -   Input from broad community expertise (rather than expertise
-        within Astro alone) is included in design decisions, with the
-        goal of reaching very high-quality decisions with large
-        community buy-in
-
-    -   Promotes communication across multiple users and projects
-
-    -   Ensures consistency across multiple projects and missions
-
--   Maintain the publicly available [Software Long-Term Plan](https://github.com/USGS-Astrogeology/softwaremanagement/blob/master/LongTermPlanning.md) document
-    by updating the document at least annually
-    (addresses SAT finding 1).
-
-#### Longer-term (5-year horizon):
-
--   Evaluate the effectiveness of our efforts and make reasonable
-    changes to our approach based on community feedback and lessons
-    learned.
-
----
-
-## Objective 9: Provide training opportunities for ASC staff
-
-Improving our software development capacities and efficiency requires
-well trained software developers, product owners, and product creators.
-In order to support and retain a knowledgeable and motivated software
-development team, we must provide both professional development
-opportunities and career pathways for early- and mid-career developers.
-In addition, Product Owners must be trained to improve project
-management (e.g., clear definition of deliverables), and new processors
-must be trained to maintain a skilled workforce.
-
-#### Ongoing Efforts:
-
--   Ensure that funded projects exist to continue the development of
-    both new and deeper expertise
-
--   Assign project work to software developers in a team-structured
-    manner that facilitates cross-training among members.
-
--   Continue sending developers to conferences and workshops
-
--   Continue management training (for supervisors, project, and
-    technical managers)
-
-#### Longer-term (5-year horizon):
-
--   Continuing the above training
-
-
+# 2023 - 2028 Strategic Plan
+
+## Executive Summary
+This document outlines the 2023-2028 strategic plan for the Astrogeology Science Center software section. The plan describes four overlapping thematic areas of effort: Cloud & Software as a Service, Sensor Models & Photogrammetric Control, Improved Usability & Independently Identified Capabilities, and Documentation & User Training. Within each thematic area, individual capabilities are organized as must-have, should-have, and could-have within the next five years.
+
+This document also describes the intended audience and proposes that this document be used to support the development and related funding decisions of the ASC software portfolio over the coming five years. The process used to generate this document is described to provide context to the reader about from whom information was sourced and how this document was drafted. This document describes how funding is currently organized. Finally, a plan for the longer-term maintenance and update cadence of the document is provided.
+
+## Intended Audience and Use
+This document is intended for contributors to the ASC software portfolio who may be proposing new work, contributors seeking to make changes to component of the software portfolio under existing work agreements, software management as a tool to help prioritize proposed efforts under larger funding agreements, and users with an interest in the long-term trajectory of software within the ASC portfolio. This document describes the methods used for information gathering and the organizational approach used. This documented also provides context for how tasks have historically been categorized under previous funding agreements and provide forward guidance for the approximate distribution of tasks during future fiscal years. 
+
+The ASC development team and ASC technical management are more than happy to collaborate with and support the broader contributing community that may wish to propose to a funding opportunity to make improvements or modifications on software within the ASC software portfolio. This document should serve as a community organized guide to the capabilities and thematic areas for development that have been identified as high value. 
+
+## Development and Organization
+This document is a snapshot of work initiation in July 2021 to collect ideas, input, and direction from the ASC software development team, contributors to ASC software development projects, the ISIS Technical Committee, and the broad ISIS user base. The members of these groups participated in close to a dozen in-person brainstorming and context building sessions in order to build a framework from which this LTP has been developed. 
+
+The ASC software lead has been tasked with collating the information gathered from the contributor and user community. Once collated, the identified thematic development areas have been brought into alignment with some of the driving planetary science community documents (e.g., [NASA Planetary Decadal (2013-2022)](https://science.nasa.gov/science-red/s3fs-public/atoms/files/Planetary_DS.pdf), [NASA PDE Recommendations and Findings (2021)](https://science.nasa.gov/files/science-red/s3fs-public/atoms/files/PDE%20IRB%20Final%20Report.pdf), [ISIS SAT Review (2018)](https://github.com/USGS-Astrogeology/softwaremanagement/tree/master/SpecialActionTeam_Review), [NASA Strategy for Data Management and Computing  for Groundbreaking Science 2019-2024](https://science.nasa.gov/science-red/s3fs-public/atoms/files/SDMWG%20Strategy_Final.pdf), [OMB M-13-13, Open Data Policy - Managing Information as an Asset](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf), [OMB M-16-21](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2016/m_16_21.pdf)) and with the long-term planning documents from other ASC sections. Specifically, many of the photogrammetric control and sensor model improvements are linked to product generation priorities that have been drawn from documents such as the [Lunar Critical Data Products SAT report](https://www.lpi.usra.edu/mapsit/standup-committees/LCDP-SAT-REPORT-20211110.pdf), the [Artemis  III SDT draft report](https://lunarscience.arc.nasa.gov/artemis-sdt/downloads/Artemis_III_SDT_DRAFT_Report_STM.pdf), and the previously linked decadal. Capability prioritization (described below) was ultimately done by the ASC software lead, with significant input from the aforementioned group of people during brainstorming and context building sessions.
+
+The breadth of capability development desired by the user community and development team exceeds the capabilities of the ASC software development team. This is one indicator that a thriving software portfolio exists with high user engagement. One organizational approach would be to be exclusive and remove tasks or development areas which are likely outside the reasonable scope of effort or expertise of the core development team (primarily ASC employees). Instead, this document is organizing capabilities first into larger thematic areas and then into must-do, should-do, and can-do categories with the understanding that can-do activities are likely to no be completed by the ASC development team in the next five years unless (a) unforeseen changes occur that move capabilities into different categories or (b) the addition of can-do capabilities are a natural and low effort addition to other higher priority work. In our view, it is important to explicitly describe the organizational structure and limitations of time in order to maintain shared expectations with all readers.
+
+Capabilities identified in this document are presented in a form like a traditional user story. The general form is 'In five years, <user> will be able to <activity> to <outcome>'.  This form is being used because it is exceptionally concrete. A reader is immediately aware of the capability that a user will be using and anyone wishing to develop said capability has at least a minimal definition of done for their proposed task. Where appropriate, this document identified precursor work, but this document is neither prescient nor inclusive. Readers should feel free to identify necessary pre-work and [open an issue] to discuss those ideas with others.
+
+Finally, this document makes every effort to explicitly link capabilities to identified use cases to ensure the highest likelihood of adoption of capabilities. As a development group, we have found the highest user satisfaction comes from tight integration and high communication during the development process. It is important to support the high communication development model at all levels of the development process, from this document to the fix of a bug.
+
+
+## Thematic Development Areas
+
+### Cloud and Software as a Service
+##### Context and Description:
+
+##### In the next five years, the ASC software portfolio must:
+1. include cloud enabled services with well documented APIs that are accessible by end users. One example of this is the current work to cloud enable the SPICE server with support for USGSCSM and ISIS style sensor models. These services should be documented such that they can be deployed by anyone to the same cloud hosting provider that ASC deploys them to [^clouddeploy].
+    - Projects using this capability: (1) most, if not all, internal users transitioning to using the remote, cloud enabled SPICE service, (2) control projects using AutoCNet transitioning to using cloud SPICE services, (3) STAC search, data/metadata management, and catalog APIs, (4) nomenclature capabilities as more accessible APIs, and (4) other unidentified cloud enabled services which should be able to link to at least one project or user community that will make use of the service.
+    - Supporting community policy and finding documents:
+        - OMB M-13-13 Build information systems to support interoperability and information accessibility; (a) the system must be scalable and flexible.
+        - SAT Finding 9: Found that the code is being developed openly, as requested. The natural extension to this finding is to provide open and accessible SaaS and APIs.
+        - SAT Finding 20: Broadening the SPICE web server
+        - NASA PDE Recommendation 10: The prioritization of cross organizational APIs, as opposed to individually developed APIs, benefits the community.
+        - NASA SDMCGS 2.3: Support the use of commercial cloud capabilities for open science to make data accessible to a diverse et of users.
+
+1. provide user accessible data necessary to use libraries in the software portfolio via the cloud.
+    - Projects using this capability: (1) all users performing an installation of our code base.
+    - Supporting community policy and finding documents:
+      - SAT Finding 8: Increase code modularity
+      - NASA PDE Findings 40, 41, 42: Cloud and HPC are enabling technologies, pending adoption of data interoperability and usability concerns (as identified within the PDE findings). Software should be available and immediately usable as data issues are incrementally addressed.
+      - NASA SDMCGS 2.3: Support the use of commercial cloud capabilities for open science to make data accessible to a diverse et of users.
+
+##### In the next five years, the ASC software portfolio should:
+1. provide examples of containerized software libraries (ISIS) that are cloud deployed, including examples creating processing pipelines using one or more linked services.
+    - Projects using this capability:
+    - Supporting community policy and finding documents:
+      - SAT Finding 6: Task based workflow tutorials should be made available. 
+
+1. release a cloud deployed AutoCNet with *qnet* style point/measure visualization and analysis. This need not be an AutoCNET SaaS solution for users and can rather be components such that users can (re)create the same processing environment.
+    - Projects using this capability: (1) any remote (over-the-wire, where data are not local) control work can make use of a *qnet* style visualization solution, (2) control work using AutoCNet, (3) other SaaS solutions identified in the future can make use of the lessons learned.
+    - Supporting community policy and finding documents:
+      - NASA PDE Findings 40, 41, 42: Cloud and HPC are enabling technologies, pending adoption of data interoperability and usability concerns (as identified within the PDE findings). Software should be available and immediately usable as data issues are incrementally addressed.
+
+1. provide explicit descriptions attached to each ASC software portfolio library describing if said library can be cloud enabled and if the library has been cloud enabled.
+    - Projects using this capability: All users and developers and the bringing the lifecycles into alignment with expectations supports everyone.
+    - Supporting community policy and finding documents:
+      - OMB M-16-21 5.2.D & 5.2.F: Community engagement and project documentation require descriptions of project status and agency engagement levels.
+        
+##### In the next five years, the ASC software portfolio could:
+1. develop a accessible cloud ISIS with HTTP(S) access to ISIS applications demonstrating an ISIS as a service (SaaS) solution. Initially private and then possibly publicly accessible.
+    - Projects using this capability: An users wishing to move from desktop to SaaS environments.
+    - Supporting community policy and finding documents:
+        - OMB M-1313 (Build information systems to support interoperability and information accessibility; (a) the system must be scalable and flexible.)
+
+### Sensor Models & Photogrammetric Control
+##### In the next five years, the ASC software portfolio must:
+1. have fully adopted ALE, SpiceQL, and the updated ISIS ingestion programs. This includes the deprecation of currently deployed capabilities across **all** sensor models. This also incudes the development, testing, and deploy of CSM sensor models for past, current, and future missions.
+    - Projects using this capability: All ISIS users will be using this capability. Implementation of this capability removes the dual maintenance burden that currently exists by having two (legacy and new) implementations concurrently supported.
+    - Supporting community policy and finding documents:
+      - SAT Finding 8: Increase code modularity. (This work, once completed, executes the modularization plan for SPICE data management and usage within the ISIS code base.)
+
+1. provide automated solutions for ground control point selection using varied ground truth data sets.
+    - Projects using this capability: All control projects include, but not limited to Kaguya TC, CTX, etc.
+    - Supporting community policy and finding documents:
+      - SAT Finding 19: Automated image matching and feature recognition
+
+1. include tools of workflows for adding observations to existing control projects.
+    - Projects using this capability: THEMIS, CTX, LROC-NAC, Europa Clipper (presumptive)
+    - Supporting community policy and finding documents:
+      - SAT Finding 19: Automated image matching and feature recognition
+
+##### In the next five years, the ASC software portfolio should:
+1. create prototype examples of CSM sensor models for (1) multi- and hyper-spectral spectrometers and (2) incredibly long exposure time observations when one wants fine grained timing control.
+    - Projects using this capability: Continued CSM development efforts as this capability completes demonstration of the CSM across all major sensor types we encounter. 
+    - Supporting community policy and finding documents:
+        - OMB M-13-13 Build information systems to support interoperability and information accessibility.
+        - OMB M-19-15 Implementation Update 3.2: the computer code for custom analysis of data (in this case sensor models), should be made available for subsequent analysis by the public (i.e., open source sensor models)
+
+1. understand how to (or not to) support J2000 within a CSM sensor model.
+    - Projects using this capability: Continued CSM development efforts as this capability answers questions about the broad usability of the specification. 
+    - Supporting community policy and finding documents:
+      - OMB M-13-13 Build information systems to support interoperability and information accessibility.
+      - OMB M-19-15 Implementation Update 3.2: the computer code for custom analysis of data (in this case sensor models), should be made available for subsequent analysis by the public (i.e., open source sensor models)
+
+1. include tools for improved interoperability between the NASA Ames Stereopipeline, ISIS, and SocetGXP using the Community Sensor Model (CSM).
+    - Projects using this capability: ASC APPL group DTM generation
+    - Supporting community policy and finding documents:
+      - OMB M-13-13 Build information systems to support interoperability and information accessibility.
+
+1. distributed (HPC) photogrammetric bundle adjustment in support of exceptionally large control networks.
+    - Projects using this capability: CTX, KaguyaTC, likely LROC-NAC North and South polar mosaics
+    - Supporting community policy and finding documents:
+      - See ASC products LTP. Specifically, the need to develop large spatial extent foundational data products for the Moon and Mars.
+
+1. enhance the existing bundle adjustment library to support sequential photogrammetric control estimation and adjustment.
+    - Projects using this capability: Large global solutions, regional solutions with high resolution data (LROC NAC or HiRISE control), and missions with sequentially updated data (e.g., THEMIS IR or to be acquired Europa Clipper data).
+    - Supporting community policy and finding documents:
+      - See ASC products LTP. Specifically, the need to develop large spatial extent foundational data products for the Moon and Mars.
+
+##### In the next five years, the ASC software portfolio could:
+1. support simultaneous photogrammetric control solutions for Lidar and image observation data.
+    - Projects using this capability: Control projects where lidar data are available.
+    - Supporting community policy and finding documents:
+      - See ASC products LTP. Specifically, the need to develop foundational data products for the Moon.
+
+1. improve GIS footprint generation
+    - Projects using this capability: control projects and analysis ready data generation pipelines all benefit from improvements in GIS ready footprint generation.
+    - Supporting community policy and finding documents:
+      - ??
+
+1. be able to apply photogrammetric adjustment to solve for period, phase, and amplitude for librational movements for bodies.
+    - Projects using this capability: Outer planets control research.
+    - Supporting community policy and finding documents:
+      - ??
+
+1. support adding increased metadata to points and measures within control networks including, but not limited to photometric and/or image resolution metadata.
+    - Projects using this capability: Photogrammetric control projects
+    - Supporting community policy and finding documents:
+      - ??
+
+1. add capabilities to control network image registration to support adaptive reference measure selection and/or registration chaining whereby registration success is stateful and metadata about a successful registration is used in subsequent processing. 
+    - Projects using this capability: Photogrammetric control projects
+    - Supporting community policy and finding documents:
+      - ??
+
+1. provide additional capabilities for control network analysis.
+    - Projects using this capability: Photogrammetric control projects
+    - Supporting community policy and finding documents:
+      - ??
+
+### Improved Usability & Independently Identified Capabilities
+
+##### Context and Description:
+##### In the next five years, the ASC software portfolio must:
+1. release one or more versions of ISIS making use of a standard and stand-alone Input/Output library (either off-the-shelf or homegrown) with support for performance enhancing capabilities (e.g., image pyramids).
+    - Projects using this capability: All ISIS users benefit from this capability due to improved performance, reduced maintenance costs (intended consequence), and standardization that should improve interoperability.
+    - Supporting community policy and finding documents:
+        - OMB M-13-13: III.1.a Use machine-readable and open formats and prioritize the the use open, non-proprietary data formats with no usage restrictions.
+        - NASA PDE Recommendation 51: tools should be developed translate common planetary formats and standards to support adoption by other science communities.
+
+1. provide consistent installation experiences for users on explicitly supported packages including improved dependency management, installation instructions, and installation tooling.
+    - Projects using this capability: Given the complex dependency versioning interactions on the ISIS project, this the prime candidate for removing installation friction though all ASC projects would benefit from lessons learned.
+    - Supporting community policy and finding documents:
+      - SAT Finding 12 & 13: Broadly identify installation concerns and the need for an ever improving installation experience.
+
+1. expose and document Python (or other broadly use, higher-level language) access to library APIs.
+    - Projects using this capability: ISIS is the primary target and beneficiary of this work. API access is **not** at the application level, rather it is at some API level.
+    - Supporting community policy and finding documents:
+      - SAT Finding 21: Provide high level Python API to the community.
+
+1. standardize onto a single set of web technologies and frameworks to support data accessibility, discoverability, and access by users such that data access portals can be developed at lower costs across project areas
+    - Projects using this capability: All ASC Data section releases seeking custom online solutions (e.g., terrestrial analogs data portal, nomenclature, PDS web mapping and processing portal, geologic mapping data portal, etc.)
+    - Supporting community policy and finding documents:
+      - OMB M-16-16 III.1.a Open data must be available in accessible, searchable, and convenient formats
+      - NASA PDE Finding 50 / Recommendation 36: Terrestrial analog data do not have a primary repository. (This effort tangentially addresses this through the development and support of a clearing house of terrestrial analog data.)
+  
+
+##### In the next five years, the ASC software portfolio should:
+1. provide improved photometric modelling capabilities including examples of off-the-shelf tools for large data visualization and analysis, and support for the inclusion of atmospheric and/or band information in the analysis process.
+    - Projects using this capability: Improved generation of cosmetically appealing image mosaics
+    - Supporting community policy and finding documents:
+      - See ASC products LTP. Specifically, the need to develop large spatial extent foundational data products for the Moon and Mars.
+
+1. support the development of cosmetically appealing and scientifically accurate image mosaics using photometric information.
+    - Projects using this capability: All control projects.
+    - Supporting community policy and finding documents:
+      - See ASC products LTP. Specifically, the need to develop foundational data products for the Moon and Mars.
+
+1. begin supporting remote data visualization and analysis include, but not limited to observation and control network data and metadata. 
+    - Projects using this capability: AutoCNet based control solutions will immediately benefit from this work. Any remote workers and users wishing to setup remote (perhaps on HPC resources) solutions.
+    - Supporting community policy and finding documents:
+      - ??
+
+1. package off-the-shelf and/or custom solutions for the generation of analysis ready data and associated metadata including tooling for processing, metadata generation, and metadata management. Metadata management includes the need to update metadata and manage sematic linkages between data sets.
+    - Projects using this capability: All analysis ready data (ARD) releases.
+    - Supporting community policy and finding documents:
+      - OMB M-16-16: I.Open Data.Described Open / III.1.d data are fully described so that consumers can assess their usability through common core and extensible  metadata. 
+      - OMB M-19-15: Implementation Update 2.2 Agencies should provide users with adequate data documentation to support a user's determination of fitness-for-use
+      - NASA PDE Recommendation 32: Recommends that NASA should develop archives for analysis ready data (ARD). This work is facilitating technology for building one such archive.
+      - NASA PDE Recommendation 53: Recommends that data linkages and types are clearly documented. This work is facilitating technology.
+
+##### In the next five years, the ASC software portfolio could:
+1. provide tools for the extraction of limb profiles and limb topography to improve photogrammetric control capabilities and improve shape estimation, primarily for flyby missions.
+    - Projects using this capability: Science investigations
+    - Supporting community policy and finding documents:
+      - ??
+
+1. include generic tools for dejittering line scan data that build off of the open source HiRISE dejittering pipeline or develop new and novel techniques for line scan dejittering to support high efficacy DTM generation. (Note: this requires a non-trivial amount of research before the software team can productionize a solution. Should that research occur, this could transition higher in the priorities).
+    - Projects using this capability: DTM generation (HiRISE, CTX, LROC NAC)
+    - Supporting community policy and finding documents:
+      - See ASC products LTP. Specifically, the need to develop foundational data products for the Moon and Mars.
+
+1. update the ISIS library be callable using Unix style command line interfaces, (e.g., man spiceinit) in order to improve the sematic interoperability between ISIS tools and other standard Unix command line tools.
+    - Projects using this capability: No projects explicitly use this capability. Instead, all users would potentially benefit from logical consistency across tools.
+    - Supporting community policy and finding documents:
+      - NASA PDE Finding 61: Many PDE elements are designed for expert users and should be made moe accessible. (This effort would align the use of the ISIS code base with unix standards, thereby removing the custom structure of current commands.)
+
+1. include increased adoption of targeted parallelization efforts in order to improve single machine performance for tasks with long runtimes.
+    - Projects using this capability: Potential benefit across a range of users
+    - Supporting community policy and finding documents:
+      - SAT Finding 16: Software optimization
+
+1. provide an updated method for unique observation identification (i.e., serial numbers).
+    - Projects using this capability: Described in the context of control. Needs additional project linkages if work is undertaken.
+    - Supporting community policy and finding documents:
+      - ??
+
+
+### Documentation & User Training
+##### Context and Description:
+Documentation is a foundational piece of any software with a user base broader than the person who wrote the code. Documentation can take many forms, from the published manuals and books of old to a series of blog posts or YouTube videos demonstrating example usages. Currently, the ASC software portfolio maintains many different documentation types across an equally large number of locations. The documentation and user training thematic area for future work focuses first and foremost on centralizing the current offerings and future offerings. Centralization is not just a matter of having a single remote accessible location to discover and access documentation, but also the adoption of a standard organizational schema to ensure continuity in documentation across individual projects within the portfolio.
+
+The overriding philosophy is that documentation needs to be pervasive across the above thematic areas so that technical and non-technical users can adopt our libraries and tools. 
+
+The highest priority capabilities that must be realized over the next five years focus on improving the discoverability and readability of ASC documentation, as well as the democratization of said documentation by enabled (and ultimately soliciting) contributions from all users. Having this framework in place adds significantly to the value of work done under the should and could categories as that work will ultimately be more accessible. Capabilities that should be added in the next five years complement the existing documentation and make use of ASC published software as components in larger processing and/or analysis pipelines more accessible to users. Efforts that should be undertaken also support adoption of ASC services and the improved communication of expectations between developers and users by explicitly describing library maturity [^maturity]. Finally, capabilities that could be added in the next five years include usage tracking metrics and in-person trainings. This latter capability warrants a small amount of additional discussion.
+
+The person-time cost to generate in-person learning experiences, particularly by persons without pedagogical training is quite high. The scope of impact from in-person training opportunities is limited by the number of persons in attendance and then further limited by the follow-on opportunities for those attendees to practice the skills learned. The development time of high quality, asynchronously accessible tutorials and learning examples, backed by a thriving question and answer community, for example via a Q&A website, can also be high. The ability for learners to not only use, but also asynchronously interact with other learners and project contributors is why this document prioritizes this type of documentation and learning over in-person activities.
+
+This section does not link explicitly to projects that benefit because improved documentation is broadly impactful. This section also enumerates specific documentation tasks that are more granular than the policy and findings documents that explicitly support this effort. Therefore, instead of inlining references to those documents alongside each capability, those linkages are enumerate here:
+
+- OMB M-16-21: 5.2F Provide documentation that includes the software status, intended purpose, expected activity cadence, license details, and technical usage details.
+- OMB M-16-21: 5.2B Engage in open software development that includes making source code available and engaging the community to improve development outcomes
+- SAT Finding 6: Task based workflow tutorials should be made available.
+- NASA PDE Recommendation 10: NASA should prioritize the use of data/metadata standards including APIs. By extension, these standards and APIs need to be well documented, ideally using documentation standards (e.g., the OpenAPI specification), in order to be usable beyond the authors and/or maintainers of the API.
+- NASA PDE Recommendation 50: The development of educational and documentation materials is essential to meet high priority user needs.
+- NASA PDE Recommendation 54: Developer advocacy that includes means for developers to learn about API usage to support their work.
+- NASA PDE Finding 67 / Recommendation 64: There are inadequate training opportunities for software users. This section addresses this finding directly.
+
+##### In the next five years, the ASC software portfolio must:
+1. make centralized and searchable documentation available to all users using a standard deploy framework.
+1. adopt a cross project documentation standard whereby all projects provide the same style(s) of documentation in largely the same forms to improve cross library documentation readability for users.
+1. provide ability for external contributions to the documentation that is largely maintained by ASC personnel.
+1. work to increase adoption of CSM sensor models beyond SocetGXP in order to create a robust planetary user community around this standard.
+
+##### In the next five years, the ASC software portfolio should:
+1. publish examples and tutorials that demonstrate workflows across applications, including examples demonstrating how to use applications in different computing environments (e.g., cloud, HPC, desktop).
+1. increase documentation quality by enacting processes to improve communication during development between implementor and user.
+1. develop the ability to generate documentation from processing pipelines to support reproducibility of product generation including examples of cross-application processing.
+1. select an explicit schema for describing the maturity of projects in the software portfolio and draft public facing policies that describe said schema. 
+1. evangelize the availability of API backed services for use by external service and tool developers to support de-duplication of effort. Together with this effort is the adoption of services provided by others.
+
+##### In the next five years, the ASC software portfolio could
+1. select off-the-shelf or develop and deploy metrics tracking for adoption of remotely accessible APIs (i.e., services).
+1. initiate efforts to actively train novice users across communities (with a focus on reaching traditionally underserved communities) through workshops, office hours, or other face-to-face (digital or in-person) efforts. 
+
+
+## Organization of Funding
+Historically, the software development efforts at the ASC have been divided into three areas: Maintenance and Maintainability (M&M), Value-Adding, and Research. Maintenance and Maintainability tasks have accounted for between fifty-five and sixty percent of the overall work effort each year. These tasks include the release of our software portfolio to the community, maintenance of software library data areas, support sprints for our customers, Open-Source community development around ASC libraries, and iterative improvements to the code base such as migration of the ISIS tests to GTest or the modularization of the ISIS PVL and Blob classes into independently compilable libraries. Value-Adding tasks have accounted for between twenty-five and thirty-five percent of the overall work effort. These tasks have included efforts such as the development of Community Sensor Model (CSM) sensors, PDS4 support, and development and release of the Abstraction Library for Ephemerides (ALE). Finally, Research tasks account for between five and fifteen percent of the overall work effort in any given year. These tasks focus on developing and testing prototype capabilities that may or may not become a standard part of the ASC software portfolio. In previous fiscal years, tasks have included change detection, automated control network generation, bundle adjustment using the CSM, and photometric data analysis and correction capabilities.
+
+Significant improvements to the development process by the ASC development team and wider community of contributors have supported the gradual reduction in the total cost of M&M tasks while improving both the developer and end-user experience. Our goal is to continue to seek strategic process efficiencies in order to either accelerate M&M tasks (such as the continued reduction in testing data volumes which in turn better supports robust software deploys and non-ASC developer participation) or to slowly transition work to the Value-Adding area. In other words, by automating a non-trivial amount of daily work, adopting industry norms for many development processes, and normalizing user expectations for maintenance and release cadence work, we can and will reallocate those work hours to other tasks.
+
+The Research area of the portfolio has been successful in incubating capabilities that have successfully transitioned into our Value-Adding area. Therefore, the plan is to maintain five to fifteen percent of total work effort in those tasks. In contrast to the current model, moving forward research tasks will be time limited to at most ~5% of the total work effort. The goal is to increase the diversity of research tasks. The downside to capping research tasks is that the timeline for transitioning from research to production may be extended, but the increased diversity should provide the ASC development group with improved flexibility to meet ever evolving community needs. Note also that research tasks can and should span the breadth of our portfolio and are not limited to traditional science only research operation. Research into new development, release, or data sharing processes, development frameworks, or other technical solutions are all valuable research contributions.
+
+## Intended Long Term Plan Maintenance
+In contrast with the previous software LTP, this document is intended to be updated annually with the following goals:
+  - Do no harm. The current trajectory of multi-year efforts should be maintained, and projects should be fully completed unless a significant, program level change has been identified or a project scope has grown to an untenable level.
+  - Maintain agility in strategic execution by supporting the movement of development goals between the must-do, could-do, and should-do categories on an annual basis.
+  - Develop and maintain a sixth-year backlog of development ideas that are agilely incorporated into existing thematic areas / categories, or cycle off as a tool for seeding the annual updating of this document.
+
+[^clouddeploy]: In our experience, generalized deploy anywhere including cloud solutions are frequently homegrown making them hard to maintain. Even a 'simple' solution like making a  Docker container available to users that is deployed to Amazon EKS (a Kubernetes cluster) causes friction on the deployer side (as they are not using some cloud native infrastructure they might want to use) and on the user side (as we would not be making the K8 configuration files available to end users.
+[^maturity]: The description of library maturity also supports better classification of our releases as per USGS software release guidelines and brings the ASC software portfolio into full compliance with our release requirements.
